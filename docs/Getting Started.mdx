@@ -1,0 +1,111 @@
+---
+id: Getting Started
+title: Getting Started
+sidebar_label: Getting Started
+---
+
+
+## Mount a Remote Server
+
+- Mount your sshfs volume/folder (optional).
+
+```shell
+$ sshfs username@crane.unl.edu:/work/chaselab/username ~/sshfs
+```
+export const Highlight = ({children, color}) => ( <span style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#000000',
+      padding: '0.2rem',
+    }}> {children} </span> );
+
+
+## Configure the Project
+
+- Open&nbsp;&nbsp;<Highlight color="#FAE000">yaml.config</Highlight>&nbsp;&nbsp;file inside your project folder.
+
+
+```yaml {1-10}
+# Project definitions (do not edit)
+Task: project
+scorer: bigbrother
+date: 1984
+
+# Project path (change when moving around)
+project_path: /work/group/username/project
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /work/group/username/project/videos/video.*:
+    crop: 0, 1280, 0, 720
+bodyparts:
+- bodypart1
+- bodypart2
+
+start: 0
+stop: 1
+numframes2pick: 20
+
+# Plotting configuration
+skeleton:
+- - bodypart1
+  - bodypart2
+
+skeleton_color: black
+pcutoff: 0.8
+dotsize: 4
+alphavalue: 0.7
+colormap: jet
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+resnet:
+snapshotindex: -1
+batch_size: 8
+
+# Cropping Parameters
+# (for analysis and outlier frame detection)
+cropping: false
+#if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+# Refinement configuration
+# (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+default_net_type: resnet_50
+default_augmenter: default
+
+```
+
+
+~~- Download the project folder from [Google Drive](https://drive.google.com/drive/folders/14T_FbLM1BQeu_UKMbP2l3eE-FA7G4xIT?usp=sharing).~~
+- Extract the `.zip` file.
+- Mount your sshfs volume/folder.
+
+
+<aside class="notice">Replace `username` with your username on the cluster.</aside>
+
+
+- Move the folder of the project to your `sshfs` volume/folder.
+
+
+- Open your `sshfs` volume/folder, then open your project folder.
+- Open the&nbsp;&nbsp;<Highlight color="#FAE000">yaml.config</Highlight>&nbsp;&nbsp;file to change parameters and identify label names. **This is a crucial step!**
+
+    - Replace `username` with your username and `project` with your project name under `project_path:`.
+    - Replace username, project, and video name `cat-eyes.mp4` with your project's information under `video_sets:`.
+    - Save and close.
+
+:::important
+
+Make sure that your path in the config file matches the path you will will use on the cluster.
+
+:::

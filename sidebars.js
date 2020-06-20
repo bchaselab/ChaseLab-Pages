@@ -1,5 +1,5 @@
 module.exports = {
   someSidebar: {
-    DeepLabCut: ['dlc-slurm'],
+    DeepLabCut: ['Getting Started', 'dlc-slurm'],
   },
 };
