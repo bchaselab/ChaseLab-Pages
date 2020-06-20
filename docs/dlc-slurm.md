@@ -1,0 +1,90 @@
+---
+id: dlc-slurm
+title: Use DLC on Slurm
+sidebar_label: Use DLC on Slurm
+---
+
+![PyPI](https://img.shields.io/pypi/v/deeplabcutcore)
+
+## Get started
+
+- Run and interactive job on SLURM.  For example:
+
+```bash
+$ srun --partition=gpu --gres=gpu --constraint='gpu_32gb&gpu_v100' --mem=32gb --ntasks-per-node=21 --nodes=1 --time=8:00:00 --pty $SHELL
+```
+
+- Export your `$HOME` as your `$WORK` environment to aovid errors while installing packages, etc.
+
+```bash
+$ cd $HOME
+$ export HOME=/work/group/user
+$ cd $WORK
+```
+
+## Load/Build DLC Environment
+
+- Load required Anaconda and Cuda (for GPU use) into your session.
+
+```bash
+$ module load cuda
+$ module load anaconda
+```
+
+- Create a DeepLabCut-GPU environment from a `.yaml` file, install `tensorflow-gpu`, then start an IPython session.
+
+```bash
+$ wget "http://www.mousemotorlab.org/s/DLC-GPU.yaml"
+$ conda env create -f DLC-GPU.yaml	# run only once
+$ conda install tensorflow-gpu==1.12	# run only once
+$ conda activate DLC-GPU
+$ nvidia-smi	# check your GPU
+$ ipython
+```
+
+- Install `DeepLabCutCore`, import tensorflow, then import DLC in light mode.
+
+```python
+In [ ]: !pip install deeplabcutcore
+In [ ]: import tensorflow as tf
+In [ ]: from tensorflow.python.client import device_lib    # optional
+In [ ]: device_lib.list_local_devices()    # optional
+In [ ]: import os
+In [ ]: os.environ["DLClight"]="True"
+In [ ]: import deeplabcut
+```
+
+## Train Your Neural Network
+
+- Specify the path of your project's configuration file, `config.yaml`.  Then, create your training dataset.
+
+```python
+In [ ]: path_config_file = '/work/group/user/project/config.yaml'
+
+In [ ]: deeplabcut.create_training_dataset(path_config_file,Shuffles=[1])
+```
+
+- If the file `resnet_v1_50.ckpt` fail to load, try installing it again from source.
+
+```python
+In [ ]: cd /work/group/user/.local/lib/python3.7/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/
+In [ ]: !bash download.sh
+```
+
+- Train your network (a minimum of ~200,000 iteration is recommended).  If you want to save snapshots of your dataset, adjust `saveiters=''`.  When you are satisifed with the number of iterations your neural network reached, you can stop it `CTRL+C`.
+
+```python
+In [ ]: deeplabcut.train_network(path_config_file, shuffle=1, saveiters=1000, displayiters=10)
+```
+
+## Evaluate Network and Label Video
+
+- Evaluate you neural network, then analyze and label your video.
+
+```python
+In [ ]: deeplabcut.evaluate_network(path_config_file)
+In [ ]: VideoType = ''    # write down your video type
+In [ ]: videofile_path = ['/work/group/user/project/videos/video.*']
+In [ ]: deeplabcut.analyze_videos(path_config_file,videofile_path, videotype=VideoType)
+In [ ]: deeplabcut.create_labeled_video(path_config_file,videofile_path)
+```
