@@ -1,6 +1,6 @@
 {
   "name": "doocu",
-  "version": "0.0.0",
+  "version": "2.0.0-alpha.58",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
@@ -10,12 +10,23 @@
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.58",
+    "@docusaurus/plugin-client-redirects": "^2.0.0-alpha.58",
+    "@docusaurus/plugin-content-docs": "^2.0.0-alpha.37",
+    "@docusaurus/plugin-ideal-image": "^2.0.0-alpha.58",
     "@docusaurus/preset-classic": "^2.0.0-alpha.58",
     "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.39",
     "@docusaurus/theme-search-algolia": "^2.0.0-alpha.32",
     "clsx": "^1.1.1",
+    "color": "^3.1.2",
+    "npm-to-yarn": "^1.0.0-2",
+    "parse-numeric-range": "^1.2.0",
+    "prism-react-renderer": "^1.1.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-live": "^2.2.2",
+    "react-simple-code-editor": "^0.11.0",
+    "rehype-truncate": "^1.1.0",
+    "remark-images": "^2.0.0"
   },
   "browserslist": {
     "production": [
