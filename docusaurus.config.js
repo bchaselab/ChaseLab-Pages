@@ -54,13 +54,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/fcatus/chaselab/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'hhttps://github.com/fcatus/chaselab/edit/master/website/blog/',
+            'https://github.com/fcatus/chaselab/edit/master/',
         },
         themes: ['@docusaurus/theme-classic', '@docusaurus/theme-live-codeblock', '@docusaurus/theme-search-algolia'],
       },
