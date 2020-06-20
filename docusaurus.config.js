@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Chase Lab',
   tagline: '',
-  url: '',
+  url: 'https://chaselab.netlify.app',
   baseUrl: '/',
   favicon: 'img/uno.png',
   organizationName: 'University of Nebraska at Omaha', // Usually your GitHub org/user name.
@@ -14,17 +14,17 @@ module.exports = {
         src: 'img/cat.png',
       },
       links: [
-        // {
-        //   to: 'docs/',
-        //   activeBasePath: 'docs',
-        //   label: 'Docs',
-        //   position: 'left',
-        // },
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        {
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Docs',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/fcatus/chaselab',
+          label: 'GitHub',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -53,14 +53,14 @@ module.exports = {
           homePageId: 'dlc-slurm',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl:
+            'https://github.com/fcatus/chaselab/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl:
+            'hhttps://github.com/fcatus/chaselab/edit/master/website/blog/',
         },
         themes: ['@docusaurus/theme-classic', '@docusaurus/theme-live-codeblock', '@docusaurus/theme-search-algolia'],
       },
