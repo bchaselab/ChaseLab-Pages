@@ -4,6 +4,14 @@ title: Getting Started
 sidebar_label: Getting Started
 ---
 
+export const Highlight = ({children, color}) => ( <span style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#000000',
+      padding: '0.2rem',
+    }}> {children} </span> );
+
+<img src="./static/img/DLC_logo.png" alt="drawing"/>
 
 ## Mount a Remote Server
 
@@ -12,13 +20,6 @@ sidebar_label: Getting Started
 ```shell
 $ sshfs username@crane.unl.edu:/work/chaselab/username ~/sshfs
 ```
-export const Highlight = ({children, color}) => ( <span style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#000000',
-      padding: '0.2rem',
-    }}> {children} </span> );
-
 
 ## Configure the Project
 

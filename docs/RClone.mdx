@@ -1,0 +1,105 @@
+---
+id: RClone
+title: RClone
+sidebar_label: RClone
+---
+
+
+<img src="./static/img/rclone_logo.png" alt="drawing" width="50"/>
+
+## Load the Module
+
+```shell
+$ module load rclone
+```
+
+## Configure RClone
+
+Here, we configure `RClone` to use [Google Drive](https://www.google.com/drive/).
+
+```shell
+$ rclone config
+```
+
+```shell
+e) Edit existing remote
+n) New remote
+d) Delete remote
+r) Rename remote
+c) Copy remote
+s) Set configuration password
+q) Quit config
+e/n/d/r/c/s/q> n
+
+name> GoogleDrive
+
+Choose a number from below, or type in your own value
+13 / Google Drive
+   \ "drive"
+Storage> drive
+
+client_id> # your client ID here
+
+client_secret> # your client secret here
+
+Choose a number from below, or type in your own value
+ 1 / Full access all files, excluding Application Data Folder.
+   \ "drive"
+ 2 / Read-only access to file metadata and file contents.
+   \ "drive.readonly"
+   / Access to files created by rclone only.
+ 3 | These are visible in the drive website.
+   | File authorization is revoked when the user deauthorizes the app.
+   \ "drive.file"
+   / Allows read and write access to the Application Data folder.
+ 4 | This is not visible in the drive website.
+   \ "drive.appfolder"
+   / Allows read-only access to file metadata but
+ 5 | does not allow any access to read or download file content.
+   \ "drive.metadata.readonly"
+scope> 1
+
+root_folder_id> # Leave blank normally.
+
+service_account_file> # Leave blank normally.
+
+Edit advanced config? (y/n)
+y) Yes
+n) No (default)
+y/n> n
+
+Remote config
+Use auto config?
+ * Say Y if not sure
+ * Say N if you are working on a remote or headless machine
+y) Yes (default)
+n) No
+y/n> n
+```
+
+## Use Rclone
+
+```shell
+# List contents of Box
+$ rclone ls GoogleDrive:/
+
+# download a file
+$ rclone copy GoogleDrive:/SomeFile.txt ./
+# or a directory
+$ rclone copy GoogleDrive:/cat_pictures ./cat_pictures
+# upload a file
+$  rclone copy ./SomeFile.txt GoogleDrive:/
+# or a directory
+$ rclone copy ./cat_pictures GoogleDrive:/cat_pictures
+```
+
+- You can also sync a folder using the `RClone` module.
+
+```shell
+$ rclone sync ./cat_pictures GoogleDrive:/cat_pictures
+```
+
+
+:::note
+Google Drive has a 700 GB limit per day.
+:::

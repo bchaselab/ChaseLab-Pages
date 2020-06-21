@@ -14,11 +14,6 @@ module.exports = {
                 src: 'img/cat.png',
             },
             links: [{
-                to: 'docs/',
-                activeBasePath: 'docs',
-                label: 'Docs',
-                position: 'left',
-            }, {
                 href: 'https://github.com/fcatus/chaselab',
                 label: 'GitHub',
                 position: 'right',

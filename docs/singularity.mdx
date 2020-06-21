@@ -1,0 +1,72 @@
+---
+id: singularity
+title: Singularity
+sidebar_label: Singularity
+---
+
+
+export const Highlight = ({children, color}) => ( <span style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#000000',
+      padding: '0.2rem',
+    }}> {children} </span> );
+
+<img src="./static/img/singularity-logo.svg" alt="drawing" width="50"/>
+
+## Load the Module
+
+```shell
+$ module load singularity
+```
+
+## Pull From Docker
+
+```shell
+$ singularity pull docker://ubuntu:16.04
+```
+
+## Execute
+
+Usage: `singularity [global options...] exec [exec options...] <container> <command>`
+
+```bash
+$ singularity exec ubuntu_16.04.sif bash
+```
+
+## Build From a Custom Recipe
+
+- Create your recipe file
+
+```shell
+$ nano recipe
+```
+
+```shell
+BootStrap: debootstrap
+OSVersion: trusty
+MirrorURL: http://us.archive.ubuntu.com/ubuntu/
+
+
+%runscript
+    echo "The Big Brother is watching you..."
+
+
+%post
+    echo "Hello from inside the container"
+    sed -i 's/$/ universe/' /etc/apt/sources.list
+    apt-get update
+    apt-get -y install vim
+    apt-get clean
+```
+
+- Create a link directing to an endpoint's (e.g., <Highlight color="#7BA9FF">SylabsCloud</Highlight>) authentication token, then build the container.
+
+```shell
+$ singularity remote login
+$ singularity build --remote ubuntu.sif recipe
+```
+
+:::caution
+`Remote login` is currently not working on Crane.
+:::
