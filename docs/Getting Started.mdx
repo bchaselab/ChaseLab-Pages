@@ -25,6 +25,18 @@ $ sshfs username@crane.unl.edu:/work/chaselab/username ~/sshfs
 
 - Open&nbsp;&nbsp;<Highlight color="#FAE000">yaml.config</Highlight>&nbsp;&nbsp;file inside your project folder.
 
+~~- Download the project folder from [Google Drive](https://drive.google.com/drive/folders/14T_FbLM1BQeu_UKMbP2l3eE-FA7G4xIT?usp=sharing).~~
+- Extract the `.zip` file.
+
+
+<aside class="notice">Replace `username` with your username on the cluster.</aside>
+
+
+- Move the folder of the project to your `sshfs` volume/folder.
+
+
+- Open your `sshfs` volume/folder, then open your project folder.
+- Open the&nbsp;&nbsp;<Highlight color="#FAE000">yaml.config</Highlight>&nbsp;&nbsp;file to change parameters and identify label names. **This is a crucial step!**
 
 ```yaml {1-10}
 # Project definitions (do not edit)
@@ -86,24 +98,9 @@ default_augmenter: default
 
 ```
 
-
-~~- Download the project folder from [Google Drive](https://drive.google.com/drive/folders/14T_FbLM1BQeu_UKMbP2l3eE-FA7G4xIT?usp=sharing).~~
-- Extract the `.zip` file.
-- Mount your sshfs volume/folder.
-
-
-<aside class="notice">Replace `username` with your username on the cluster.</aside>
-
-
-- Move the folder of the project to your `sshfs` volume/folder.
-
-
-- Open your `sshfs` volume/folder, then open your project folder.
-- Open the&nbsp;&nbsp;<Highlight color="#FAE000">yaml.config</Highlight>&nbsp;&nbsp;file to change parameters and identify label names. **This is a crucial step!**
-
-    - Replace `username` with your username and `project` with your project name under `project_path:`.
-    - Replace username, project, and video name `cat-eyes.mp4` with your project's information under `video_sets:`.
-    - Save and close.
+- Replace `username` with your username and `project` with your project name under `project_path:`.
+- Replace username, project, and video name `cat-eyes.mp4` with your project's information under `video_sets:`.
+- Save and close.
 
 :::important
 
