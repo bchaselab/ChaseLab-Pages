@@ -15,27 +15,29 @@ export const Highlight = ({children, color}) => ( <span style={{
 
 ## Mount a Remote Server
 
+You can transfer your project to the cluster using Rclone or any other service you prefer, but we will use sshfs in this example.
+
 - Mount your sshfs volume/folder (optional).
+
 
 ```shell
 $ sshfs username@crane.unl.edu:/work/chaselab/username ~/sshfs
 ```
 
-## Configure the Project
-
-- Open&nbsp;&nbsp;<Highlight color="#FAE000">yaml.config</Highlight>&nbsp;&nbsp;file inside your project folder.
-
-~~- Download the project folder from [Google Drive](https://drive.google.com/drive/folders/14T_FbLM1BQeu_UKMbP2l3eE-FA7G4xIT?usp=sharing).~~
+(example) ~~- Download the project folder from [Google Drive](https://drive.google.com/drive/folders/14T_FbLM1BQeu_UKMbP2l3eE-FA7G4xIT?usp=sharing).~~
 - Extract the `.zip` file.
 
-
-<aside class="notice">Replace `username` with your username on the cluster.</aside>
-
-
-- Move the folder of the project to your `sshfs` volume/folder.
+- Move the folder of the project to your `sshfs` volume.
 
 
-- Open your `sshfs` volume/folder, then open your project folder.
+:::important
+Replace `username` with your username on the cluster.
+:::
+
+
+## Configure the Project
+
+- Open your `sshfs` volume, then open your project folder.
 - Open the&nbsp;&nbsp;<Highlight color="#FAE000">yaml.config</Highlight>&nbsp;&nbsp;file to change parameters and identify label names. **This is a crucial step!**
 
 ```yaml {1-10}
@@ -100,6 +102,7 @@ default_augmenter: default
 
 - Replace `username` with your username and `project` with your project name under `project_path:`.
 - Replace username, project, and video name `cat-eyes.mp4` with your project's information under `video_sets:`.
+- Change `bodyparts` labels.
 - Save and close.
 
 :::important
