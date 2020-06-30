@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    DeepLabCut: ['Getting Started', 'dlc-slurm', 'dlc-containers'],
+    DeepLabCut: ['Getting Started', 'dlc-config', 'dlc-slurm', 'dlc-containers'],
     HCC: ['singularity', 'RClone']
   },
 };
