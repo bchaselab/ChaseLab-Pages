@@ -13,100 +13,57 @@ export const Highlight = ({children, color}) => ( <span style={{
 
 <img src="https://i.ibb.co/L0KB1G0/03661e83db9c.png" alt="drawing"/>
 
-## Mount a Remote Server
 
-You can transfer your project to the cluster using Rclone or any other service you prefer, but we will use sshfs in this example.
-
-- Mount your sshfs volume/folder (optional).
-
+## Build DLC Conda Environment
 
 ```shell
-$ sshfs username@crane.unl.edu:/work/chaselab/username ~/sshfs
+# For the local build, we will use the CPU environment
+$ wget "http://www.mousemotorlab.org/s/DLC-CPU.yaml"
+$ conda env create -f DLC-CPU.yaml
+$ conda activate DLC-CPU
+$ pythonw
 ```
 
-(example) ~~- Download the project folder from [Google Drive](https://drive.google.com/drive/folders/14T_FbLM1BQeu_UKMbP2l3eE-FA7G4xIT?usp=sharing).~~
-- Extract the `.zip` file.
-
-- Move the folder of the project to your `sshfs` volume.
-
-
-:::important
-Replace `username` with your username on the cluster.
-:::
-
-
-## Configure the Project
-
-- Open your `sshfs` volume, then open your project folder.
-- Open the&nbsp;&nbsp;<Highlight color="#FAE000">yaml.config</Highlight>&nbsp;&nbsp;file to change parameters and identify label names. **This is a crucial step!**
-
-```yaml {1-10}
-# Project definitions (do not edit)
-Task: project
-scorer: bigbrother
-date: 1984
-
-# Project path (change when moving around)
-project_path: /work/group/username/project
-
-# Annotation data set configuration (and individual video cropping parameters)
-video_sets:
-  /work/group/username/project/videos/video.*:
-    crop: 0, 1280, 0, 720
-bodyparts:
-- bodypart1
-- bodypart2
-
-start: 0
-stop: 1
-numframes2pick: 20
-
-# Plotting configuration
-skeleton:
-- - bodypart1
-  - bodypart2
-
-skeleton_color: black
-pcutoff: 0.8
-dotsize: 4
-alphavalue: 0.7
-colormap: jet
-
-# Training,Evaluation and Analysis configuration
-TrainingFraction:
-- 0.95
-iteration: 0
-resnet:
-snapshotindex: -1
-batch_size: 8
-
-# Cropping Parameters
-# (for analysis and outlier frame detection)
-cropping: false
-#if cropping is true for analysis, then set the values here:
-x1: 0
-x2: 640
-y1: 277
-y2: 624
-
-# Refinement configuration
-# (parameters from annotation dataset configuration also relevant in this stage)
-corner2move2:
-- 50
-- 50
-move2corner: true
-default_net_type: resnet_50
-default_augmenter: default
-
+```python
+In [ ]: import deeplabcut
+In [ ]: deeplabcut.launch_dlc()
 ```
 
-- Replace `username` with your username and `project` with your project name under `project_path:`.
-- Replace username, project, and video name `cat-eyes.mp4` with your project's information under `video_sets:`.
-- Change `bodyparts` labels.
-- Save and close.
+## Create New Project
 
-:::important
+![](https://i.ibb.co/WfgkVV2/712bdb7d6882.png)
 
-Make sure that your path in the config file matches the path you will will use on the cluster.
+- Type the name of the project and your name.
+- Select the video you want to use for the current project.
+- Check the first box, then click 'Browse' and choose a directory that you can remember.
+- Check the second box.
 
-:::
+![](https://i.ibb.co/2nycs1B/9df618f6dbff.png)
+
+- Keep the defaults then hit "Ok".
+
+![](https://i.ibb.co/wrFDjJ8/8528c491a949.png)
+Wait until all processes are finished.  When it's done, you will see the following message:
+
+> Frames were successfully extracted.
+>
+> You can now label the frames using the function 'label_frames' (if you extracted enough frames for all videos).
+
+## Label Frames
+
+![](https://i.ibb.co/y41bsBB/29fe1bd90610.png)
+
+- Click on `Label Frames` in the bottom.
+
+![](https://i.ibb.co/rsp2vwG/593f8d070614.png)
+
+- Label the body parts with mouse right-click.
+- When you are done, `save` then `quit`.
+
+![](https://i.ibb.co/y41bsBB/29fe1bd90610.png)
+
+- Click on `check labels`.
+
+---
+
+The steps you need to do on your local computer are done.  Now we will move the project to the cluster!
