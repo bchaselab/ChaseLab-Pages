@@ -1,0 +1,103 @@
+---
+id: dlc-config
+title: DLC Project Configuration
+sidebar_label: DLC Project Configuration
+---
+
+export const Highlight = ({children, color}) => ( <span style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#000000',
+      padding: '0.2rem',
+    }}> {children} </span> );
+
+## Move the Project to the Clutser
+
+### Mount a Remote Server (optional)
+
+- Mount your sshfs volume.
+
+```shell
+$ sshfs username@crane.unl.edu:/work/chaselab/username /path/to/sshfs
+```
+
+:::important
+Replace `username` with your username on the cluster.
+:::
+
+- Move the project folder to the sshfs volume.
+
+- Open your project folder inside the `sshfs` volume.
+
+- Open the&nbsp;&nbsp;<Highlight color="#FAE000">yaml.config</Highlight>&nbsp;&nbsp;file to change parameters and identify label names. **This is a crucial step!**
+
+```yaml
+    # Project definitions (do not edit)
+Task: myproject
+scorer: myname
+date: Jun30
+multianimalproject: false
+
+    # Project path (change when moving around)
+project_path: /work/chaselab/username/myproject-myname-2020-06-30
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /work/chaselab/username/myproject-myname-2020-06-30/videos/wheel.mp4:
+    crop: 0, 1280, 0, 720
+bodyparts:
+- bodypart1
+- bodypart2
+- bodypart3
+- objectA
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - bodypart1
+  - bodypart2
+- - objectA
+  - bodypart3
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: plasma
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+croppedtraining: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+```
+
+- Replace `username` with your username and the example project name with your project name under `project_path:`.
+- Replace username, project, and video name with your project's information under `video_sets:`.
+- Save and close.
+
+:::important
+
+Make sure that your path in the config file matches the path you will will use on the cluster.
+
+:::
