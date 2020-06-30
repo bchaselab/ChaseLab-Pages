@@ -6975,6 +6975,11 @@ obuf@^1.0.0, obuf@^1.1.2:
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.2.tgz#09bea3343d41859ebd446292d11c9d4db619084e"
   integrity sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==
 
+oembed-providers@^1.0.20170414:
+  version "1.0.20170414"
+  resolved "https://registry.yarnpkg.com/oembed-providers/-/oembed-providers-1.0.20170414.tgz#bb4d0daef2fc2cc0e317a5a32acb499f3bb7c81f"
+  integrity sha1-u00NrvL8LMDjF6WjKstJnzu3yB8=
+
 omggif@^1.0.9:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/omggif/-/omggif-1.0.10.tgz#ddaaf90d4a42f532e9e7cb3a95ecdd47f17c7b19"
