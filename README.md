@@ -3,8 +3,10 @@
 ## Start developing:
 
 ```bash
-$ npm i docsify-cli -g
-$ git clone https://gitlab.com/fcatus/docs-chaselab.git
-$ cd docs-chaselab
-$ docsify serve
+$ npm i docusaurus
+
+$ git https://github.com/bchaselab/chaselab-pages.git
+$ cd chaselab-pages
+
+$ yarn run start
 ```
