@@ -1,11 +1,11 @@
 module.exports = {
     title: 'Chase Lab',
     tagline: '',
-    url: 'https://chaselab.netlify.app',
+    url: 'https://chaselab.now.sh/',
     baseUrl: '/',
     favicon: 'img/favicon.ico',
-    organizationName: 'University of Nebraska at Omaha', // Usually your GitHub org/user name.
-    projectName: 'Chase Lab', // Usually your repo name.
+    organizationName: 'bchaselab', // Usually your GitHub org/user name.
+    projectName: 'chaselab-pages', // Usually your repo name.
     themeConfig: {
         navbar: {
             title: 'Chase Lab',
@@ -28,7 +28,7 @@ module.exports = {
                     to: 'https://toxoproject.com/',
                 }, ],
             }, ],
-            copyright: `Copyright © ${new Date().getFullYear()} Chase Lab, Inc.`,
+            copyright: `Copyright © ${new Date().getFullYear()} Chase Lab.`,
         },
         theme: {
             customCss: require.resolve('./src/css/custom.css'),
@@ -47,7 +47,7 @@ module.exports = {
                     homePageId: 'Getting Started',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/fcatus/chaselab/edit/master/',
+                    editUrl: 'https://github.com/bchaselab/ChaseLab-Pages/edit/master/',
                 },
             },
         ],
