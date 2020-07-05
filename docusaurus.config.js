@@ -3,7 +3,7 @@ module.exports = {
     tagline: '',
     url: 'https://chaselab.netlify.app',
     baseUrl: '/',
-    favicon: 'img/*.png',
+    favicon: 'img/favicon.ico',
     organizationName: 'University of Nebraska at Omaha', // Usually your GitHub org/user name.
     projectName: 'Chase Lab', // Usually your repo name.
     themeConfig: {
