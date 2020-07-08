@@ -11,7 +11,7 @@ sidebar_label: DLC
 ## Run DeepLabCut GUI
 
 ```shell
-# On MacOS, open iterm. On Windows, open Anaconda cmd
+# On MacOS/Linux open a terminal window. On Windows, open Anaconda Prompt
 $ conda activate DLC-CPU
 $ pythonw	# on Windows: $ ipython
 ```
@@ -19,14 +19,43 @@ $ pythonw	# on Windows: $ ipython
 ## Create New Project
 
 ![](https://i.ibb.co/WfgkVV2/712bdb7d6882.png)
-`Manage Project`
+Tab: `Manage Project`
 - Type the name of the project and your name.
 - Select the video you want to use for the current project.
 - Check the first box, then click 'Browse' and choose a directory that you can remember (typically your desktop).
 - Check the second box.
 
+## Modify Config File Parameters
+
+- Open your project folder.
+- Open `Config.yaml` file.
+- Change label names under `bodyparts:` and `skeleton:` (names depend on the current project).
+- Change `pcutoff:` to 0.9.
+
+```yaml
+# Default config.yaml
+# These are the parameters that you will need to change
+bodyparts:
+- bodypart1
+- bodypart2
+- objectA
+- bodypart3
+.
+.
+.
+skeleton:
+- - bodypart1
+  - bodypart2
+- - objectA
+  - bodypart3
+
+pcutoff: 0.6
+```
+
+## Extract Frames
+
 ![](https://i.ibb.co/2nycs1B/9df618f6dbff.png)
-`Extract Frames`
+Tab: `Extract Frames`
 - Keep the defaults then hit "Ok".
 
 ![](https://i.ibb.co/wrFDjJ8/8528c491a949.png)
@@ -39,7 +68,7 @@ Wait until all processes are completed.  When completed, you will see the follow
 ## Label Frames
 
 ![](https://i.ibb.co/y41bsBB/29fe1bd90610.png)
-`Label Frames`
+Tab: `Label Frames`
 - Click on `Label Frames` button in the bottom.
 
 ![](https://i.ibb.co/rsp2vwG/593f8d070614.png)
