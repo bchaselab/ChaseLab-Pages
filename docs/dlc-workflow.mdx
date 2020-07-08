@@ -1,0 +1,149 @@
+---
+id: dlc-workflow
+title: DeepLabCut Workflow
+sidebar_label: DLC
+---
+
+## Download the Video From Google Drive
+
+- A video will be assigned to you.  You will recieve an email with a link to the folder that has the video or I will specificly point to a video that you can download.
+
+## Run DeepLabCut GUI
+
+```shell
+# On MacOS, open iterm. On Windows, open Anaconda cmd
+$ conda activate DLC-CPU
+$ pythonw	# on Windows: $ ipython
+```
+
+## Create New Project
+
+![](https://i.ibb.co/WfgkVV2/712bdb7d6882.png)
+`Manage Project`
+- Type the name of the project and your name.
+- Select the video you want to use for the current project.
+- Check the first box, then click 'Browse' and choose a directory that you can remember (typically your desktop).
+- Check the second box.
+
+![](https://i.ibb.co/2nycs1B/9df618f6dbff.png)
+`Extract Frames`
+- Keep the defaults then hit "Ok".
+
+![](https://i.ibb.co/wrFDjJ8/8528c491a949.png)
+Wait until all processes are completed.  When completed, you will see the following message:
+
+> Frames were successfully extracted.
+>
+> You can now label the frames using the function 'label_frames' (if you extracted enough frames for all videos).
+
+## Label Frames
+
+![](https://i.ibb.co/y41bsBB/29fe1bd90610.png)
+`Label Frames`
+- Click on `Label Frames` button in the bottom.
+
+![](https://i.ibb.co/rsp2vwG/593f8d070614.png)
+
+- Label the body parts.
+- When you are done, `save` then `quit`.
+
+![](https://i.ibb.co/y41bsBB/29fe1bd90610.png)
+- Click on `check labels`.
+- Close DeepLabCut interface, then hit `CTRL+C` in your terminal.
+
+
+## Change Paths
+
+Next, we will change all the paths in the configuration file to match the cluster's.
+- Open your project folder.
+- Open `Config.yaml` file.
+- Change the paths under `project_path:` and `video_sets` to match the cluster's directory.  For example:
+
+The following paths
+```yaml
+# Example
+project_path: /Users/Duck/Desktop/data/catcatcatgo/may20_catcat_10-08-2020
+
+video_sets:
+  /Users/Duck/Desktop/data/catcatcatgo/may20_catcat_10-08-2020/cat.mp4:
+```
+
+will be changed to:
+```yaml
+# Example
+project_path: /work/chaselab/<username>/may20_catcat_10-08-2020
+
+video_sets:
+  /work/chaselab/<username>/may20_catcat_10-08-2020/cat.mp4:
+```
+
+:::note
+On windows, make sure you change all back slashes "\" to forward slashes "/"
+:::
+
+- Save and close.
+
+
+## Upload Your Project Folder to Google Drive
+
+- Open your school's account on Google Drive.
+- Drag and drop the folder to the same shared folder you downloaded the video from.
+- Wait for the upload to complete.
+
+
+## Log in to the Cluster
+
+- Now log in to the cluster:
+
+```shell
+$ ssh <username>@crane.unl.edu
+```
+
+- Call your "DLC environment kit":
+```shell
+$ source i.sh
+```
+
+## Copy Your Project Folder to the Cluster
+
+You will use Rclone to copy your project folder from Google Drive to the cluster.  Do this by running:
+
+```shell
+$ rclone --drive-shared-with-me copy drive:</path/to/project> ./<project>
+```
+
+:::note
+The `</path/to/project>` can be viewed at the top of the Google Drive page.
+:::
+
+For example, this:
+
+![](https://i.ibb.co/7nFK8r3/01f91b410257.png)
+
+would be:
+
+```shell
+# Example
+$ rclone --drive-shared-with-me copy drive:may20/may20_catcat_10-08-2020 ./
+```
+
+
+### Copy to `Shared`
+- When the folder is downloaded to the cluster, make a copy to `chaselab` group's shared folder.  To do this, simply run:
+
+```shell
+$ cp $WORK/<project> /work/chaselab/shared/toxo-project/DLC-DATA-SHARE/<project>
+```
+
+export const Highlight = ({children, color}) => ( <span style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#000000',
+      padding: '0.2rem',
+    }}> {children} </span> );
+
+<br />
+
+
+&nbsp;&nbsp;<Highlight color="#FAE000"><strong>&nbsp;&nbsp;Done!&nbsp;&nbsp;&nbsp;</strong></Highlight>
+<embed src="../src/html/cat_swinging.html" width="350px" height="500px" />
