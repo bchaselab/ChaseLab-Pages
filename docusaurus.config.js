@@ -44,7 +44,7 @@ module.exports = {
                 docs: {
                     // It is recommended to set document id as docs home page (`docs/` path).
                     routeBasePath: '/',
-                    homePageId: 'Getting Started',
+                    homePageId: 'dlc-workflow',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/bchaselab/ChaseLab-Pages/edit/master/',
