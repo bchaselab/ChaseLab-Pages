@@ -1,5 +1,7 @@
 # Chase Lab Pages
 
+[![Vercel](https://img.shields.io/badge/Vercel-Live-brightgreen)](https://chaselab.now.sh/) [![Netlify Status](https://api.netlify.com/api/v1/badges/6f7f792a-269b-4fe1-a3cb-b58c23f8a891/deploy-status)](https://app.netlify.com/sites/chaselab/deploys)
+
 ## Start contributing:
 
 ### Requirements
