@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Chase Lab',
     tagline: '',
-    url: 'https://https://chaselab.netlify.app',
+    url: 'https://chaselab.netlify.app',
     baseUrl: '/',
     favicon: 'img/favicon.ico',
     organizationName: 'bchaselab', // Usually your GitHub org/user name.
