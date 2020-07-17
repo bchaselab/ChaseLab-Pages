@@ -1,0 +1,84 @@
+---
+id: dlc-workflow-cont
+title: DeepLabCut Workflow Cont.
+sidebar_label: DLC Cont.
+---
+
+
+## Create a Python Script
+
+- Create a python script for your DLC project.
+
+```shell
+$ nano dlc_<project_name>.py
+```
+
+- Copy and paste the following script, then make sure to update `cfg` and `videofile_path` with the appropiate paths.
+
+```python
+import tensorflow as tf
+import os
+
+os.environ["DLClight"]="True"
+import deeplabcut
+
+cfg = '<config_file_path>'	# update
+
+deeplabcut.create_training_dataset(cfg,Shuffles=[1])
+
+deeplabcut.train_network(cfg, shuffle=1, saveiters=1000, displayiters=10, maxiters=200000)
+
+deeplabcut.evaluate_network(cfg, Shuffles=[1], plotting=True)
+
+videofile_path = '<video_file_path>'	# update
+
+deeplabcut.analyze_videos(cfg, videofile_path, videotype='mp4')
+
+deeplabcut.create_labeled_video(cfg, videofile_path)
+```
+
+- When you are done, hit `CTRL+O`, `ENTER`, `CTRL+X` to save and exit.
+
+## Create a GPU Job
+
+- Now we will submit the python script you created earlier as a GPU job.  To do this, create a new file `<project_name>.slurm`.
+
+```shell
+$ nano <project_name>.slurm
+```
+
+- Copy and paste the following script, then update `<username>` and `<project_name>` to your username and project folder name.
+
+```shell
+#!/bin/bash
+#SBATCH --time=08:00:00
+#SBATCH --mem-per-cpu=1024
+#SBATCH --job-name=TOXO-DLC
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu
+#SBATCH --constraint='gpu_v100'
+#SBATCH --mem=16gb
+#SBATCH --ntasks-per-node=21
+#SBATCH --nodes=1
+#SBATCH --error=/work/chaselab/<username>/job.%J.err
+#SBATCH --output=/work/chaselab/<username>/job.%J.out
+
+cd /home/chaselab/<username>
+export HOME=/work/chaselab/<username>
+export WORK=/work/chaselab/<username>
+cd $WORK
+module load rclone
+module load cuda
+module load anaconda
+conda activate DLC-GPU
+python dlc_<project_name>.py
+rclone --drive-shared-with-me copy $WORK/<project_name> drive:/Crane/<project_name>/results
+```
+
+## Submit Your GPU Job
+
+- To submit the job, run:
+
+```shell
+$ sbatch <project_name>.slurm
+```
