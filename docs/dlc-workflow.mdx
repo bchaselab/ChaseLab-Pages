@@ -80,9 +80,34 @@ Tab: `Label Frames`
 - Label the body parts.
 - When you are done, `save` then `quit`.
 
-![](https://i.ibb.co/y41bsBB/29fe1bd90610.png)
-- Click on `check labels`.
+## Build Skeleton
+Tab: `Label Frames`
+
+- Click on `Build Skeleton` button in the bottom.
+- Drag your mouse on the points in the correct order to draw a line that defines the skeleton.
+- Hit `Export`, then close the window.
+
+![](https://i.ibb.co/4p7D1Lh/000c162dae1b.gif)
+
 - Close DeepLabCut interface, then hit `CTRL+C` in your terminal.
+
+
+## Clean Labeled Data
+
+- Open the `.csv` file under your project folder → labeled-data → video-name folder → `CollectedData<name>.csv`.
+- If you skipped any frame, you will notice that some rows have no data.
+- Delete any image that does not have any data in the .csv file (the images name are in the first column of the .csv file, and the actual images can be found under the same folder you found your .csv file in).
+- When you are done deleting the actual images (don't edit the .csv file!), open a new terminal window and run the following:
+
+```shell
+$ conda activate DLC-CPU
+$ pythonw  # on Windows: $ ipython
+```
+```python
+>>> import deeplabcut
+>>> cfg = '<config_file_path>'
+>>> deeplabcut.dropannotationfileentriesduetodeletedimages(cfg)
+```
 
 
 ## Change Paths
