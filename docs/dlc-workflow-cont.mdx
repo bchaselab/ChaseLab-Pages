@@ -60,8 +60,8 @@ $ nano <project_name>.slurm
 #SBATCH --mem=16gb
 #SBATCH --ntasks-per-node=21
 #SBATCH --nodes=1
-#SBATCH --error=/work/chaselab/<username>/job.%J.err
-#SBATCH --output=/work/chaselab/<username>/job.%J.out
+#SBATCH --error=/work/chaselab/<username>/job.%J.<project_name>.err
+#SBATCH --output=/work/chaselab/<username>/job.%J.<project_name>.out
 
 cd /home/chaselab/<username>
 export HOME=/work/chaselab/<username>
@@ -71,7 +71,7 @@ module load rclone
 module load cuda
 module load anaconda
 conda activate DLC-GPU
-python dlc_<project_name>.py
+python <project_name>.py
 rclone --drive-shared-with-me copy $WORK/<project_name> drive:/Crane/<project_name>/results
 ```
 
