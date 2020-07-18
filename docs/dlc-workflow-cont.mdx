@@ -10,7 +10,7 @@ sidebar_label: DLC Cont.
 - Create a python script for your DLC project.
 
 ```shell
-$ nano dlc_<project_name>.py
+$ nano <project_name>.py
 ```
 
 - Copy and paste the following script, then make sure to update `cfg` and `videofile_path` with the appropiate paths.
@@ -82,3 +82,15 @@ rclone --drive-shared-with-me copy $WORK/<project_name> drive:/Crane/<project_na
 ```shell
 $ sbatch <project_name>.slurm
 ```
+
+## Check Job Status
+
+- To check your submitted job status, run:
+
+```shell
+$ squeue -u <username>
+```
+
+Job state (ST) codes: `R - Running`, `PD - Pending: Job is awaiting resource allocation`.
+
+If you want to monitor the job, you can add `watch` before the `squeue` command (i.e., `$ watch squeue -u <username>`).
