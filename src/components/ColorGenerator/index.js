@@ -5,65 +5,65 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, {useState} from 'react';
+import React, {useState} from "react";
 
-import Color from 'color';
+import Color from "color";
 
-import CodeBlock from '@theme/CodeBlock';
+import CodeBlock from "@theme/CodeBlock";
 
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 
 const COLOR_SHADES = {
-  '--ifm-color-primary': {
+  "--ifm-color-primary": {
     adjustment: 0,
     adjustmentInput: 0,
     displayOrder: 3,
     codeOrder: 0,
   },
-  '--ifm-color-primary-dark': {
+  "--ifm-color-primary-dark": {
     adjustment: 0.1,
-    adjustmentInput: '10',
+    adjustmentInput: "10",
     displayOrder: 4,
     codeOrder: 1,
   },
-  '--ifm-color-primary-darker': {
+  "--ifm-color-primary-darker": {
     adjustment: 0.15,
-    adjustmentInput: '15',
+    adjustmentInput: "15",
     displayOrder: 5,
     codeOrder: 2,
   },
-  '--ifm-color-primary-darkest': {
+  "--ifm-color-primary-darkest": {
     adjustment: 0.3,
-    adjustmentInput: '30',
+    adjustmentInput: "30",
     displayOrder: 6,
     codeOrder: 3,
   },
-  '--ifm-color-primary-light': {
+  "--ifm-color-primary-light": {
     adjustment: -0.1,
-    adjustmentInput: '-10',
+    adjustmentInput: "-10",
     displayOrder: 2,
     codeOrder: 4,
   },
-  '--ifm-color-primary-lighter': {
+  "--ifm-color-primary-lighter": {
     adjustment: -0.15,
-    adjustmentInput: '-15',
+    adjustmentInput: "-15",
     displayOrder: 1,
     codeOrder: 5,
   },
-  '--ifm-color-primary-lightest': {
+  "--ifm-color-primary-lightest": {
     adjustment: -0.3,
-    adjustmentInput: '-30',
+    adjustmentInput: "-30",
     displayOrder: 0,
     codeOrder: 6,
   },
 };
 
-const DEFAULT_PRIMARY_COLOR = '3578e5';
+const DEFAULT_PRIMARY_COLOR = "3578e5";
 
 function ColorGenerator({children, minHeight, url}) {
   const [baseColor, setBaseColor] = useState(DEFAULT_PRIMARY_COLOR);
   const [shades, setShades] = useState(COLOR_SHADES);
-  const color = Color('#' + baseColor);
+  const color = Color("#" + baseColor);
   const adjustedColors = Object.keys(shades)
     .map((shade) => ({
       ...shades[shade],
@@ -79,7 +79,7 @@ function ColorGenerator({children, minHeight, url}) {
       <p>
         <label htmlFor="primary_color">
           <strong className="margin-right--sm">Primary Color:</strong>
-        </label>{' '}
+        </label>{" "}
         <input
           id="primary_color"
           className={styles.input}
@@ -87,10 +87,10 @@ function ColorGenerator({children, minHeight, url}) {
           onChange={(event) => {
             const colorValue = event.target.value;
             try {
-              Color('#' + colorValue);
+              Color("#" + colorValue);
               setBaseColor(colorValue);
             } catch {
-              // Don't update for invalid colors.
+              // Don"t update for invalid colors.
             }
           }}
         />
@@ -126,7 +126,7 @@ function ColorGenerator({children, minHeight, url}) {
                       </code>
                     </td>
                     <td>
-                      {variableName === '--ifm-color-primary' ? (
+                      {variableName === "--ifm-color-primary" ? (
                         0
                       ) : (
                         <input
@@ -164,7 +164,7 @@ function ColorGenerator({children, minHeight, url}) {
         {adjustedColors
           .sort((a, b) => a.codeOrder - b.codeOrder)
           .map((value) => `${value.variableName}: ${value.hex.toLowerCase()};`)
-          .join('\n')}
+          .join("\n")}
       </CodeBlock>
     </div>
   );
