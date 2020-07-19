@@ -63,7 +63,7 @@ const DEFAULT_PRIMARY_COLOR = "3578e5";
 function ColorGenerator({children, minHeight, url}) {
   const [baseColor, setBaseColor] = useState(DEFAULT_PRIMARY_COLOR);
   const [shades, setShades] = useState(COLOR_SHADES);
-  const color = Color("#" + baseColor);
+  const color = colori("#" + baseColor);
   const adjustedColors = Object.keys(shades)
     .map((shade) => ({
       ...shades[shade],
@@ -87,7 +87,7 @@ function ColorGenerator({children, minHeight, url}) {
           onChange={(event) => {
             const colorValue = event.target.value;
             try {
-              Color("#" + colorValue);
+              colori("#" + colorValue);
               setBaseColor(colorValue);
             } catch {
               // Don"t update for invalid colors.
