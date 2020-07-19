@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 module.exports = {
     "extends": "stylelint-config-recommended",
@@ -105,4 +105,4 @@ module.exports = {
         "value-list-comma-space-before": "never",
         "value-list-max-empty-lines": 0,
     },
-}
+};
