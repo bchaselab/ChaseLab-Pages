@@ -6,8 +6,8 @@
 
 ### Requirements
 
--  Node.js version >= 10.15.1 or above (check by running `$ node -v`).  If you need to install it, see [Node.js installation](https://nodejs.org/en/download/package-manager/).
--  Yarn version >= 1.5 (check by running `$ yarn version`).  If you need to install it, see [Yarn installation](https://classic.yarnpkg.com/en/docs).
+-   Node.js version >= 10.15.1 or above (check by running `$ node -v`).  If you need to install it, see [Node.js installation](https://nodejs.org/en/download/package-manager/).
+-   Yarn version >= 1.5 (check by running `$ yarn version`).  If you need to install it, see [Yarn installation](https://classic.yarnpkg.com/en/docs).
 
 ### Clone the repository
 
