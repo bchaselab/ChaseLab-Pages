@@ -18,6 +18,7 @@
     "@docusaurus/theme-search-algolia": "^2.0.0-alpha.32",
     "clsx": "^1.1.1",
     "color": "^3.1.2",
+    "lodash": "^4.17.19",
     "npm-to-yarn": "^1.0.0-2",
     "oembed-providers": "^1.0.20170414",
     "parse-numeric-range": "^1.2.0",
