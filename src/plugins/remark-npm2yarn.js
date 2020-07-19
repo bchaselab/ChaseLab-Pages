@@ -5,22 +5,22 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const npmToYarn = require('npm-to-yarn');
+const npmToYarn = require("npm-to-yarn");
 
-// E.g. global install: 'npm i' -> 'yarn'
-const convertNpmToYarn = (npmCode) => npmToYarn(npmCode, 'yarn');
+// E.g. global install: "npm i" -> "yarn"
+const convertNpmToYarn = (npmCode) => npmToYarn(npmCode, "yarn");
 
 const transformNode = (node) => {
   const npmCode = node.value;
   const yarnCode = convertNpmToYarn(node.value);
   return [
     {
-      type: 'jsx',
+      type: "jsx",
       value:
         `<Tabs groupId="npm2yarn" defaultValue="npm" ` +
         `values={[
-    { label: 'npm', value: 'npm', },
-    { label: 'Yarn', value: 'yarn', },
+    { label: "npm", value: "npm", },
+    { label: "Yarn", value: "yarn", },
   ]}
 >
 <TabItem value="npm">`,
@@ -31,8 +31,8 @@ const transformNode = (node) => {
       value: npmCode,
     },
     {
-      type: 'jsx',
-      value: '</TabItem>\n<TabItem value="yarn">',
+      type: "jsx",
+      value: "</TabItem>\n<TabItem value="yarn">",
     },
     {
       type: node.type,
@@ -40,17 +40,17 @@ const transformNode = (node) => {
       value: yarnCode,
     },
     {
-      type: 'jsx',
-      value: '</TabItem>\n</Tabs>',
+      type: "jsx",
+      value: "</TabItem>\n</Tabs>",
     },
   ];
 };
 
-const matchNode = (node) => node.type === 'code' && node.meta === 'npm2yarn';
+const matchNode = (node) => node.type === "code" && node.meta === "npm2yarn";
 const nodeForImport = {
-  type: 'import',
+  type: "import",
   value:
-    "import Tabs from '@theme/Tabs';\nimport TabItem from '@theme/TabItem';",
+    "import Tabs from "@theme/Tabs";\nimport TabItem from "@theme/TabItem";",
 };
 
 module.exports = () => {
@@ -72,7 +72,7 @@ module.exports = () => {
         }
       }
     }
-    if (node.type === 'root' && transformed) {
+    if (node.type === "root" && transformed) {
       node.children.unshift(nodeForImport);
     }
     return null;
