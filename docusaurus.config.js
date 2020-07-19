@@ -1,53 +1,53 @@
 module.exports = {
-    title: 'Chase Lab',
-    tagline: '',
-    url: 'https://chaselab.netlify.app',
-    baseUrl: '/',
-    favicon: 'img/favicon.ico',
-    organizationName: 'bchaselab', // Usually your GitHub org/user name.
-    projectName: 'chaselab-pages', // Usually your repo name.
+    title: "Chase Lab",
+    tagline: "",
+    url: "https://chaselab.netlify.app",
+    baseUrl: "/",
+    favicon: "img/favicon.ico",
+    organizationName: "bchaselab", // Usually your GitHub org/user name.
+    projectName: "chaselab-pages", // Usually your repo name.
     themeConfig: {
         navbar: {
-            title: 'Chase Lab',
+            title: "Chase Lab",
             logo: {
-                alt: 'My Site Logo',
-                src: 'img/cat.png',
+                alt: "My Site Logo",
+                src: "img/cat.png",
             },
             links: [{
-                href: 'https://github.com/fcatus/chaselab',
-                label: 'GitHub',
-                position: 'right',
+                href: "https://github.com/fcatus/chaselab",
+                label: "GitHub",
+                position: "right",
             }, ],
         },
         footer: {
-            style: 's',
+            style: "s",
             links: [{
-                title: 'Related Links',
+                title: "Related Links",
                 items: [{
-                    label: 'ToxoProject Website',
-                    to: 'https://toxoproject.com/',
+                    label: "ToxoProject Website",
+                    to: "https://toxoproject.com/",
                 }, ],
             }, ],
             copyright: `Copyright © ${new Date().getFullYear()} Chase Lab.`,
         },
         theme: {
-            customCss: require.resolve('./src/css/custom.css'),
+            customCss: require.resolve("./src/css/custom.css"),
         },
         prism: {
-            darkTheme: require('prism-react-renderer/themes/dracula'),
+            darkTheme: require("prism-react-renderer/themes/dracula"),
         },
     },
-    themes: ['@docusaurus/theme-live-codeblock'],
+    themes: ["@docusaurus/theme-live-codeblock"],
     presets: [
         [
-            '@docusaurus/preset-classic', {
+            "@docusaurus/preset-classic", {
                 docs: {
                     // It is recommended to set document id as docs home page (`docs/` path).
-                    routeBasePath: '/',
-                    homePageId: 'dlc-workflow',
-                    sidebarPath: require.resolve('./sidebars.js'),
+                    routeBasePath: "/",
+                    homePageId: "dlc-workflow",
+                    sidebarPath: require.resolve("./sidebars.js"),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/bchaselab/ChaseLab-Pages/edit/master/',
+                    editUrl: "https://github.com/bchaselab/ChaseLab-Pages/edit/master/",
                 },
             },
         ],
