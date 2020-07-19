@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-import siteConfig from '@generated/docusaurus.config';
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import siteConfig from "@generated/docusaurus.config";
 
 const prismIncludeLanguages = (Prism) => {
   if (ExecutionEnvironment.canUseDOM) {
