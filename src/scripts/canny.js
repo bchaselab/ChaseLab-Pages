@@ -31,7 +31,7 @@ function canny() {
           ? w.attachEvent("onload", l)
           : w.addEventListener("load", l, !1);
     }
-  })(window, document, "canny-jssdk", "script");
+  }(window, document, "canny-jssdk", "script"));
 }
 
 export default canny;
