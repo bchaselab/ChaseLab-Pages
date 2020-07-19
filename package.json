@@ -6,7 +6,8 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
+    "deploy": "docusaurus deploy",
+    "lint-md": "remark ."
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.58",
@@ -28,7 +29,10 @@
     "react-live": "^2.2.2",
     "react-simple-code-editor": "^0.11.0",
     "rehype-truncate": "^1.1.0",
+    "remark-cli": "^8.0.1",
     "remark-images": "^2.0.0",
+    "remark-lint": "^7.0.1",
+    "remark-preset-lint-recommended": "^4.0.1",
     "stylelint": "^13.6.1",
     "stylelint-config-recommended": "^3.0.0"
   },
@@ -42,6 +46,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
     ]
   }
 }
