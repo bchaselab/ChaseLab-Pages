@@ -1,0 +1,4 @@
+- name: Broken Web Link Checker
+  uses: elliotforbes/broken-link-checker@1.0.3
+  with:
+    url: https://chaselab.netlify.app/
