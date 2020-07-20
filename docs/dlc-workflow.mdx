@@ -120,19 +120,19 @@ Next, we will change all the paths in the configuration file to match the cluste
 The following paths
 ```yaml
 # Example
-project_path: /Users/Duck/Desktop/data/catcatcatgo/may20_catcat_10-08-2020
+project_path: /Users/Duck/Desktop/<project>
 
 video_sets:
-  /Users/Duck/Desktop/data/catcatcatgo/may20_catcat_10-08-2020/videos/cat.mp4:
+  /Users/Duck/Desktop/<project>/videos/<video>.mp4:
 ```
 
 will be changed to:
 ```yaml
 # Example
-project_path: /work/chaselab/DLC-DATA/<username>/may20_catcat_10-08-2020
+project_path: /work/chaselab/<username>/<project>
 
 video_sets:
-  /work/chaselab/DLC-DATA/<username>/may20_catcat_10-08-2020/videos/cat.mp4:
+  /work/chaselab/<username>/<project>/videos/<video>.mp4:
 ```
 
 :::note
@@ -187,7 +187,7 @@ will be:
 
 ```shell
 # Example
-$ rclone --drive-shared-with-me copy drive:may20/catcat_10-08-2020 ./<project>
+$ rclone --drive-shared-with-me copy drive:/may20/catcat_10-08-2020 ./catcat_10-08-2020
 ```
 
 
@@ -195,7 +195,7 @@ $ rclone --drive-shared-with-me copy drive:may20/catcat_10-08-2020 ./<project>
 - When the folder is downloaded to the cluster, make a copy to `chaselab` group's shared folder.  To do this, simply run:
 
 ```shell
-$ cp -r $WORK/<project> /work/chaselab/shared/toxo-project/DLC-DATA-SHARE/<project>
+$ cp -avr $WORK/<project> /work/chaselab/shared/toxo-project/DLC-DATA-SHARE/<project>
 ```
 
 export const Highlight = ({children, color}) => ( <span style={{
