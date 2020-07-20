@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Broken Web Link Checker
-        uses: elliotforbes/broken-link-checker@1.0.3
+        uses: hashicorp/gh-action-check-broken-links@v1
         with:
           baseUrl: 'https://chaselab.netlify.app' 
           files: 'docs/*.mdx'
