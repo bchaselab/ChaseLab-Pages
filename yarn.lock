@@ -989,10 +989,10 @@
     webpack-merge "^4.2.2"
     webpackbar "^4.0.0"
 
-"@docusaurus/lqip-loader@^2.0.0-alpha.58":
-  version "2.0.0-alpha.58"
-  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.58.tgz#77768774e22e2019843d1dc224cb7cdad358e7a7"
-  integrity sha512-3pW05NAqx7K/Oxn5wsYi/FReC8G97opmf3vXWgy7ElACpapOigvPHuHXHDK/v06U/LQCOZiODrJfSiBEpCOJTA==
+"@docusaurus/lqip-loader@^2.0.0-alpha.59":
+  version "2.0.0-alpha.59"
+  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.59.tgz#1dac5524771855e7408218dc062798e758eb7f4a"
+  integrity sha512-Jr5AKc8eU53tqBgzP8ZkB0EsAhk/P4JPvUY9CfCsSW2IUkBsZSyy7dirqJJDRaMI6Z9g5IQxP7B9mEfZgzkOKQ==
   dependencies:
     loader-utils "^1.2.3"
     lodash.sortby "^4.7.0"
@@ -1123,12 +1123,12 @@
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-google-gtag/-/plugin-google-gtag-2.0.0-alpha.58.tgz#6c43bd7d23ffb68cf4616041fe2c660d9c9b74ce"
   integrity sha512-t+B6K2/EvRofygDK5edeQAg2l069aU7H3sViG/3USpJSaY9bWNWRKjZk6BEOypC+mCW6g5HQgewQZ/bTkV+aDA==
 
-"@docusaurus/plugin-ideal-image@^2.0.0-alpha.58":
-  version "2.0.0-alpha.58"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.58.tgz#4b8a4aab48a9a28ba00442f7813df727ddd082ec"
-  integrity sha512-3YH30SoWbWm/R7RqyR7o8kL08+wayWj/3zsmIKHZwMGw6WSJXGiK3Skthlhxzo0HmnOoFqHSMjjwHC0Fl3Oh6w==
+"@docusaurus/plugin-ideal-image@^2.0.0-alpha.59":
+  version "2.0.0-alpha.59"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.59.tgz#ec0e7df84b9fde2600b110c82a420a926c7cf6cf"
+  integrity sha512-gWdBI0UMhBcF+ETtNkkQFxhHwXqlz4w/ygXQ4/6CoI2sgrPkAM2JCFWTZ6SDFEvs/taYHym8as5SuMxb8rd1Lg==
   dependencies:
-    "@docusaurus/lqip-loader" "^2.0.0-alpha.58"
+    "@docusaurus/lqip-loader" "^2.0.0-alpha.59"
     "@endiliey/react-ideal-image" "^0.0.11"
     "@endiliey/responsive-loader" "^1.3.2"
     react-waypoint "^9.0.2"
