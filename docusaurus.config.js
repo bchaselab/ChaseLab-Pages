@@ -1,6 +1,6 @@
 module.exports = {
     title: "Chase Lab",
-    tagline: "",
+    tagline: "University of Nebraska at Omaha",
     url: "https://chaselab.netlify.app",
     baseUrl: "/",
     favicon: "img/favicon.ico",
