@@ -13,14 +13,14 @@ module.exports = {
                 alt: "My Site Logo",
                 src: "img/cat.png",
             },
-            links: [{
+            items: [{
                 href: "https://github.com/fcatus/chaselab",
                 label: "GitHub",
                 position: "right",
             }, ],
         },
         footer: {
-            style: "s",
+            style: "dark",
             links: [{
                 title: "Related Links",
                 items: [{
