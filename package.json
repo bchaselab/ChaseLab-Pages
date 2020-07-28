@@ -19,6 +19,7 @@
     "@docusaurus/theme-search-algolia": "^2.0.0-alpha.32",
     "clsx": "^1.1.1",
     "color": "^3.1.2",
+    "jpeg-js": "^0.4.0",
     "lodash": "^4.17.19",
     "npm-to-yarn": "^1.0.0-2",
     "oembed-providers": "^1.0.20170414",
