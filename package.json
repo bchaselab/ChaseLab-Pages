@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.60",
-    "@docusaurus/plugin-client-redirects": "2.0.0-alpha.58",
+    "@docusaurus/plugin-client-redirects": "2.0.0-alpha.60",
     "@docusaurus/plugin-content-docs": "2.0.0-alpha.60",
     "@docusaurus/plugin-ideal-image": "2.0.0-alpha.60",
     "@docusaurus/preset-classic": "2.0.0-alpha.60",
