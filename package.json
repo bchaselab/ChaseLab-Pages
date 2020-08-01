@@ -16,7 +16,7 @@
     "@docusaurus/plugin-ideal-image": "2.0.0-alpha.60",
     "@docusaurus/preset-classic": "2.0.0-alpha.60",
     "@docusaurus/theme-live-codeblock": "2.0.0-alpha.60",
-    "@docusaurus/theme-search-algolia": "2.0.0-alpha.60",
+    "@docusaurus/theme-search-algolia": "2.0.0-alpha.61",
     "clsx": "1.1.1",
     "color": "3.1.2",
     "jpeg-js": "0.4.1",
