@@ -1311,10 +1311,10 @@
     react-router-dom "^5.1.2"
     react-toggle "^4.1.1"
 
-"@docusaurus/theme-live-codeblock@2.0.0-alpha.60":
-  version "2.0.0-alpha.60"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.60.tgz#1c90b13d65a0c5d98b00af364335652a0df72e77"
-  integrity sha512-6bHX+ryPNiRgvTB+1a1fCX1V+VQ2NQ7AviLu1QHGK5l4g6jKcApPsG8fgRgO/OW//gyiykyQpP6jQ7eVpoTuMA==
+"@docusaurus/theme-live-codeblock@2.0.0-alpha.61":
+  version "2.0.0-alpha.61"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.61.tgz#d5cfedb39b2c8a1056faf2c1a7d741be529b2bf6"
+  integrity sha512-igosF2WroIQ7SbMwCDUlO2vaCsfOHn7OPpj6FcQy+00oFMNsSIKImwCV47XjjxGcwleIoHFm+6lPFJjWwvh8Yw==
   dependencies:
     "@hapi/joi" "^17.1.1"
     "@philpl/buble" "^0.19.7"
