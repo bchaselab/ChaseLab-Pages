@@ -19,22 +19,57 @@ $ nano <project_name>.py
 import tensorflow as tf
 import os
 
-os.environ["DLClight"]="True"
+os.environ["DLClight"] = "True"
 import deeplabcut
 
-cfg = '<config_file_path>'	# update
+cfg = '<project_path>/config.yaml'  # update
 
-deeplabcut.create_training_dataset(cfg,Shuffles=[1])
+deeplabcut.create_training_dataset(cfg, Shuffles=[1])
 
-deeplabcut.train_network(cfg, shuffle=1, saveiters=1000, displayiters=10, maxiters=200000)
+deeplabcut.train_network(cfg,
+                         shuffle=1,
+                         saveiters=1000,
+                         displayiters=1000,
+                         maxiters=200000)
 
 deeplabcut.evaluate_network(cfg, Shuffles=[1], plotting=True)
 
-videofile_path = '<video_file_path>'	# update
+videofile_path = '<video_file_path>'  # update
 
 deeplabcut.analyze_videos(cfg, videofile_path, videotype='mp4')
 
-deeplabcut.create_labeled_video(cfg, videofile_path)
+deeplabcut.create_labeled_video(cfg, videofile_path, filtered=False)
+
+deeplabcut.plot_trajectories(cfg,
+                             videofile_path,
+                             videotype='.mp4',
+                             filtered=False)
+
+prj_path = cfg.replace('/config.yaml', '/videos/')
+
+os.rename(prj_path + 'plot-poses', prj_path + 'plot-poses-unfiltered')
+
+deeplabcut.filterpredictions(cfg,
+                             videofile_path,
+                             shuffle=1,
+                             trainingsetindex=0,
+                             filtertype='arima',
+                             p_bound=0.01,
+                             ARdegree=3,
+                             MAdegree=1,
+                             alpha=0.01)
+
+deeplabcut.create_labeled_video(cfg,
+                                videofile_path,
+                                videotype='.mp4',
+                                filtered=True)
+
+deeplabcut.plot_trajectories(cfg,
+                             videofile_path,
+                             videotype='.mp4',
+                             filtered=True)
+
+os.rename(prj_path + 'plot-poses', prj_path + 'plot-poses-filtered')
 ```
 
 - When you are done, hit `CTRL+O`, `ENTER`, `CTRL+X` to save and exit.
@@ -60,9 +95,10 @@ $ nano <project_name>.slurm
 #SBATCH --mem=16gb
 #SBATCH --ntasks-per-node=21
 #SBATCH --nodes=1
-#SBATCH --error=/work/chaselab/<username>/job.%J.<project_name>.err
-#SBATCH --output=/work/chaselab/<username>/job.%J.<project_name>.out
-
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=en9xhyz1qofxnou@pipedream.net
+#SBATCH --error=/work/chaselab/<username>/dlc-chaselab/<project_name>/%J.err
+#SBATCH --output=/work/chaselab/<username>/dlc-chaselab/<project_name>/%J.out
 cd /home/chaselab/<username>
 export HOME=/work/chaselab/<username>
 export WORK=/work/chaselab/<username>
@@ -71,8 +107,8 @@ module load rclone
 module load cuda
 module load anaconda
 conda activate DLC-GPU
-python <project_name>.py
-rclone --drive-shared-with-me copy $WORK/<project_name> drive:/Crane/<project_name>/results
+yes | python $WORK/dlc-chaselab/<project_name>/<project_name>.py
+rclone copy $WORK/dlc-chaselab/<project_name> GoogleDrive:/dlc-chaselab/<project_name>
 ```
 
 - Save `CTRL+O` `ENTER` and exit `CTRL+X`.
