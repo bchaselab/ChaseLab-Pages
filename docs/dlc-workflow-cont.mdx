@@ -96,9 +96,10 @@ $ nano <project_name>.slurm
 #SBATCH --ntasks-per-node=21
 #SBATCH --nodes=1
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=en9xhyz1qofxnou@pipedream.net
+#SBATCH --mail-user=<email_address>
 #SBATCH --error=/work/chaselab/<username>/dlc-chaselab/<project_name>/%J.err
 #SBATCH --output=/work/chaselab/<username>/dlc-chaselab/<project_name>/%J.out
+
 cd /home/chaselab/<username>
 export HOME=/work/chaselab/<username>
 export WORK=/work/chaselab/<username>
