@@ -8674,14 +8674,7 @@ prism-react-renderer@1.1.1, prism-react-renderer@^1.0.1, prism-react-renderer@^1
   resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-1.1.1.tgz#1c1be61b1eb9446a146ca7a50b7bcf36f2a70a44"
   integrity sha512-MgMhSdHuHymNRqD6KM3eGS0PNqgK9q4QF5P0yoQQvpB6jNjeSAi3jcSAz0Sua/t9fa4xDOMar9HJbLa08gl9ug==
 
-prismjs@1.21.0:
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
-  integrity sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
-  optionalDependencies:
-    clipboard "^2.0.0"
-
-prismjs@^1.20.0:
+prismjs@1.21.0, prismjs@^1.20.0:
   version "1.21.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
   integrity sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
@@ -9717,7 +9710,7 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rome@^10.0.3-beta:
+rome@10.0.3-beta:
   version "10.0.3-beta"
   resolved "https://registry.yarnpkg.com/rome/-/rome-10.0.3-beta.tgz#631b7f1d3f2e951026dc04f96d68d3dd677c5b79"
   integrity sha512-X/H8iZt+yJr1M9sU4F4sIBOBSUNZdlR2rZvIPNaOKkIT7lNvZSnTiLHVYsa6Ffc7COLa1pBbjSfCcx+7FZEp2A==
