@@ -1216,10 +1216,10 @@
     webpack-merge "^4.2.2"
     webpackbar "^4.0.0"
 
-"@docusaurus/lqip-loader@^2.0.0-alpha.61":
-  version "2.0.0-alpha.61"
-  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.61.tgz#a419632a037c0cd43091cc62271eae6caec8acc4"
-  integrity sha512-bSWGj2Ra7rUyXmeMfxETc0eMAZgUsxXHK5QVJpLAuJevOzTBoMr+D0srTN9P+RDWZjfjnwoTO/+UhvrhnA0wSg==
+"@docusaurus/lqip-loader@^2.0.0-alpha.62":
+  version "2.0.0-alpha.62"
+  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.62.tgz#d4718c810e85cbbedfd4a5bfbcc353d08d80ded0"
+  integrity sha512-vnAnTI5K4KMps6yRrpszFpWfvvZc5vGiUHGIqnNZ8eYxifUgl81lEZKKDVK5peQRFj7ZJN5K9iKNmTr0Nz4SwQ==
   dependencies:
     loader-utils "^1.2.3"
     lodash.sortby "^4.7.0"
@@ -1338,16 +1338,18 @@
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-google-gtag/-/plugin-google-gtag-2.0.0-alpha.61.tgz#9471a39b27425708b6e8cca3fca8bace7e459153"
   integrity sha512-9l/CUNtBIZqTKY7vD0dOOTrLRpbViXSQPsIOlfYDilS2AQmpsoJVQf6CcCts+GaxWMu0pTw3zeCNnFtJfDV5pA==
 
-"@docusaurus/plugin-ideal-image@2.0.0-alpha.61":
-  version "2.0.0-alpha.61"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.61.tgz#340dd7fd09d0304fea759d49829f290024c2d7c1"
-  integrity sha512-M8lwmIyWQc7xc3ZVEVGsBNhGC3YRxhWTExzniQw4Tfa3Mn+9YHZAV6SQc7p3jHYHH8prBwakRXIY+EpHJHHzag==
+"@docusaurus/plugin-ideal-image@2.0.0-alpha.62":
+  version "2.0.0-alpha.62"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.62.tgz#963680eb270d35195953475e5f2cb5a220bf15f6"
+  integrity sha512-qoZEQPPpxoGLlhKiQEKjfpmqww+etZQ5OmDxMr3IXRGF5++9iKPsIVjOdhTF4AgZ0PbKCdp3rQp0xYZ4mRTpvQ==
   dependencies:
-    "@docusaurus/lqip-loader" "^2.0.0-alpha.61"
+    "@docusaurus/lqip-loader" "^2.0.0-alpha.62"
+    "@docusaurus/types" "^2.0.0-alpha.62"
     "@endiliey/react-ideal-image" "^0.0.11"
     "@endiliey/responsive-loader" "^1.3.2"
     react-waypoint "^9.0.2"
     sharp "^0.25.2"
+    webpack "^4.41.2"
 
 "@docusaurus/plugin-sitemap@^2.0.0-alpha.61":
   version "2.0.0-alpha.61"
