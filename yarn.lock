@@ -1225,14 +1225,15 @@
     lodash.sortby "^4.7.0"
     node-vibrant "^3.1.5"
 
-"@docusaurus/mdx-loader@^2.0.0-alpha.61":
-  version "2.0.0-alpha.61"
-  resolved "https://registry.yarnpkg.com/@docusaurus/mdx-loader/-/mdx-loader-2.0.0-alpha.61.tgz#90b33f928c72d47c51a3d438990e30f143b2b1ee"
-  integrity sha512-n7VMfyshgMjoVI2YdQFlPVcMTSR+XOl2UbOTgJXDmD4yCeLOSaj63g8fwVoCy+NRkPgjpWGTGCeLNs63dk9jYg==
+"@docusaurus/mdx-loader@^2.0.0-alpha.61", "@docusaurus/mdx-loader@^2.0.0-alpha.62":
+  version "2.0.0-alpha.62"
+  resolved "https://registry.yarnpkg.com/@docusaurus/mdx-loader/-/mdx-loader-2.0.0-alpha.62.tgz#482ba7d8f1c63ab50d6fa32549142d8d1e922dc8"
+  integrity sha512-GUdmDM0JA/V3b94u8O9EcdtQJSJkLmXFNGiBV1ZnKSht9NLQtlGy4a7WDYf+j74Uf2YX93G0LivqhlAz3gpyng==
   dependencies:
     "@babel/parser" "^7.9.4"
     "@babel/traverse" "^7.9.0"
-    "@docusaurus/core" "^2.0.0-alpha.61"
+    "@docusaurus/core" "^2.0.0-alpha.62"
+    "@docusaurus/utils" "^2.0.0-alpha.62"
     "@mdx-js/mdx" "^1.5.8"
     "@mdx-js/react" "^1.5.8"
     escape-html "^1.0.3"
@@ -1282,22 +1283,24 @@
     reading-time "^1.2.0"
     remark-admonitions "^1.2.1"
 
-"@docusaurus/plugin-content-docs@2.0.0-alpha.61", "@docusaurus/plugin-content-docs@^2.0.0-alpha.61":
-  version "2.0.0-alpha.61"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-alpha.61.tgz#aa9746aa6302ae6bb7df96152734a138fba649c6"
-  integrity sha512-1WojgF+0ZQoARVF3I++2ghzG0sY4panxNiWv8Mzo2MdqECj3lgmR8jaVUSXj4bcTzX7uAEVS9MqKYIf3DBpgYg==
+"@docusaurus/plugin-content-docs@2.0.0-alpha.62", "@docusaurus/plugin-content-docs@^2.0.0-alpha.61":
+  version "2.0.0-alpha.62"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-alpha.62.tgz#49df44e7eee636daafe2be1fcf76392511480d14"
+  integrity sha512-thZFLfwc8kPBygSY8MMmjv+y4vdhdFtF4uK4Z5cvk+ClNICHv0BVScEkz6SSafR7WEBENGAmWMFzWBinzzSnpw==
   dependencies:
-    "@docusaurus/core" "^2.0.0-alpha.61"
-    "@docusaurus/mdx-loader" "^2.0.0-alpha.61"
-    "@docusaurus/types" "^2.0.0-alpha.61"
-    "@docusaurus/utils" "^2.0.0-alpha.61"
-    "@docusaurus/utils-validation" "^2.0.0-alpha.61"
+    "@docusaurus/core" "^2.0.0-alpha.62"
+    "@docusaurus/mdx-loader" "^2.0.0-alpha.62"
+    "@docusaurus/types" "^2.0.0-alpha.62"
+    "@docusaurus/utils" "^2.0.0-alpha.62"
+    "@docusaurus/utils-validation" "^2.0.0-alpha.62"
     "@hapi/joi" "17.1.1"
+    chalk "^3.0.0"
     execa "^3.4.0"
     fs-extra "^8.1.0"
     globby "^10.0.1"
     import-fresh "^3.2.1"
     loader-utils "^1.2.3"
+    lodash "^4.17.19"
     lodash.flatmap "^4.5.0"
     lodash.groupby "^4.6.0"
     lodash.pick "^4.4.0"
@@ -1305,6 +1308,8 @@
     lodash.sortby "^4.6.0"
     remark-admonitions "^1.2.1"
     shelljs "^0.8.4"
+    utility-types "^3.10.0"
+    webpack "^4.41.2"
 
 "@docusaurus/plugin-content-pages@^2.0.0-alpha.61":
   version "2.0.0-alpha.61"
@@ -1428,14 +1433,7 @@
     querystring "0.2.0"
     webpack-merge "^4.2.2"
 
-"@docusaurus/utils-validation@^2.0.0-alpha.61":
-  version "2.0.0-alpha.61"
-  resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-2.0.0-alpha.61.tgz#cc8ddbf4720f29b0cb1d630e7925ab338f9a5432"
-  integrity sha512-3QrJqZoR5eBz2XG0ijuTIp5AEOe1OHtuv7nkKArOCzFmjuBJLhUTRcECf0K+lcmdJ25zrRAWAYNgTvpVpBjaNg==
-  dependencies:
-    "@hapi/joi" "17.1.1"
-
-"@docusaurus/utils-validation@^2.0.0-alpha.62":
+"@docusaurus/utils-validation@^2.0.0-alpha.61", "@docusaurus/utils-validation@^2.0.0-alpha.62":
   version "2.0.0-alpha.62"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-2.0.0-alpha.62.tgz#aeaf6d7ff4c9730ef5b818d3cbd0716c2e4833ea"
   integrity sha512-YTr1qF6yDn0aIN7gfx7Emy5oGZ2mbk81T9E37zcZdiXpRfY5lOt8HSWhd4qfe9u1kYSZX+zqEytWl79VV3aMWw==
@@ -11555,6 +11553,11 @@ utila@^0.4.0, utila@~0.4:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/utila/-/utila-0.4.0.tgz#8a16a05d445657a3aea5eecc5b12a4fa5379772c"
   integrity sha1-ihagXURWV6Oupe7MWxKk+lN5dyw=
+
+utility-types@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/utility-types/-/utility-types-3.10.0.tgz#ea4148f9a741015f05ed74fd615e1d20e6bed82b"
+  integrity sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==
 
 utils-merge@1.0.1:
   version "1.0.1"
