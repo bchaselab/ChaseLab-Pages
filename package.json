@@ -10,10 +10,12 @@
     "lint-md": "remark ."
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.61",
+    "@docusaurus/core": "2.0.0-alpha.62",
     "@docusaurus/plugin-client-redirects": "2.0.0-alpha.62",
     "@docusaurus/plugin-content-docs": "2.0.0-alpha.62",
     "@docusaurus/plugin-ideal-image": "2.0.0-alpha.61",
+    "@docusaurus/plugin-content-docs": "2.0.0-alpha.61",
+    "@docusaurus/plugin-ideal-image": "2.0.0-alpha.62",
     "@docusaurus/preset-classic": "2.0.0-alpha.61",
     "@docusaurus/theme-live-codeblock": "2.0.0-alpha.62",
     "@docusaurus/theme-search-algolia": "2.0.0-alpha.62",
