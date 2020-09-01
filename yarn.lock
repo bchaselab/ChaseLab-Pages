@@ -1054,7 +1054,7 @@
     "@francoischalifour/autocomplete-preset-algolia" "^1.0.0-alpha.28"
     algoliasearch "^4.0.0"
 
-"@docusaurus/core@2.0.0-alpha.62", "@docusaurus/core@^2.0.0-alpha.61", "@docusaurus/core@^2.0.0-alpha.62":
+"@docusaurus/core@2.0.0-alpha.62", "@docusaurus/core@^2.0.0-alpha.62":
   version "2.0.0-alpha.62"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-2.0.0-alpha.62.tgz#d95eaea49a558616e10bbbdb415cb0419f7a5787"
   integrity sha512-6Mk9kisCx54oyvgLm74tBeNWBwwrLBNTMU0X4+xoq34QHhtyJW0/fhIZoH+/JcmIrONhAyqckF6ZAhn4rGNpVg==
@@ -1142,7 +1142,7 @@
     lodash.sortby "^4.7.0"
     node-vibrant "^3.1.5"
 
-"@docusaurus/mdx-loader@^2.0.0-alpha.61", "@docusaurus/mdx-loader@^2.0.0-alpha.62":
+"@docusaurus/mdx-loader@^2.0.0-alpha.62":
   version "2.0.0-alpha.62"
   resolved "https://registry.yarnpkg.com/@docusaurus/mdx-loader/-/mdx-loader-2.0.0-alpha.62.tgz#482ba7d8f1c63ab50d6fa32549142d8d1e922dc8"
   integrity sha512-GUdmDM0JA/V3b94u8O9EcdtQJSJkLmXFNGiBV1ZnKSht9NLQtlGy4a7WDYf+j74Uf2YX93G0LivqhlAz3gpyng==
@@ -1202,31 +1202,7 @@
     remark-admonitions "^1.2.1"
     webpack "^4.41.2"
 
-"@docusaurus/plugin-content-docs@2.0.0-alpha.61":
-  version "2.0.0-alpha.61"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-alpha.61.tgz#aa9746aa6302ae6bb7df96152734a138fba649c6"
-  integrity sha512-1WojgF+0ZQoARVF3I++2ghzG0sY4panxNiWv8Mzo2MdqECj3lgmR8jaVUSXj4bcTzX7uAEVS9MqKYIf3DBpgYg==
-  dependencies:
-    "@docusaurus/core" "^2.0.0-alpha.61"
-    "@docusaurus/mdx-loader" "^2.0.0-alpha.61"
-    "@docusaurus/types" "^2.0.0-alpha.61"
-    "@docusaurus/utils" "^2.0.0-alpha.61"
-    "@docusaurus/utils-validation" "^2.0.0-alpha.61"
-    "@hapi/joi" "17.1.1"
-    execa "^3.4.0"
-    fs-extra "^8.1.0"
-    globby "^10.0.1"
-    import-fresh "^3.2.1"
-    loader-utils "^1.2.3"
-    lodash.flatmap "^4.5.0"
-    lodash.groupby "^4.6.0"
-    lodash.pick "^4.4.0"
-    lodash.pickby "^4.6.0"
-    lodash.sortby "^4.6.0"
-    remark-admonitions "^1.2.1"
-    shelljs "^0.8.4"
-
-"@docusaurus/plugin-content-docs@^2.0.0-alpha.62":
+"@docusaurus/plugin-content-docs@2.0.0-alpha.62", "@docusaurus/plugin-content-docs@^2.0.0-alpha.62":
   version "2.0.0-alpha.62"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-alpha.62.tgz#49df44e7eee636daafe2be1fcf76392511480d14"
   integrity sha512-thZFLfwc8kPBygSY8MMmjv+y4vdhdFtF4uK4Z5cvk+ClNICHv0BVScEkz6SSafR7WEBENGAmWMFzWBinzzSnpw==
@@ -1377,7 +1353,7 @@
     eta "^1.1.1"
     lodash "^4.17.19"
 
-"@docusaurus/types@^2.0.0-alpha.61", "@docusaurus/types@^2.0.0-alpha.62":
+"@docusaurus/types@^2.0.0-alpha.62":
   version "2.0.0-alpha.62"
   resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-2.0.0-alpha.62.tgz#b030344d90de51a8dcf36bfaab7f8df9b597bd1e"
   integrity sha512-Gzx5SKt/sqcUXzLPDuFuTZNqs1jfoO3Q4L+ZRVIj3/yai5bbmIDJqRZlfeGkAFPyhFWSBfakwAM1MvJR/3/KWQ==
@@ -1387,7 +1363,7 @@
     querystring "0.2.0"
     webpack-merge "^4.2.2"
 
-"@docusaurus/utils-validation@^2.0.0-alpha.61", "@docusaurus/utils-validation@^2.0.0-alpha.62":
+"@docusaurus/utils-validation@^2.0.0-alpha.62":
   version "2.0.0-alpha.62"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-2.0.0-alpha.62.tgz#aeaf6d7ff4c9730ef5b818d3cbd0716c2e4833ea"
   integrity sha512-YTr1qF6yDn0aIN7gfx7Emy5oGZ2mbk81T9E37zcZdiXpRfY5lOt8HSWhd4qfe9u1kYSZX+zqEytWl79VV3aMWw==
@@ -1395,7 +1371,7 @@
     "@hapi/joi" "17.1.1"
     chalk "^3.0.0"
 
-"@docusaurus/utils@^2.0.0-alpha.61", "@docusaurus/utils@^2.0.0-alpha.62":
+"@docusaurus/utils@^2.0.0-alpha.62":
   version "2.0.0-alpha.62"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-alpha.62.tgz#88fa372d73e4b2aba32c75ebeda9cad49e72b145"
   integrity sha512-71sw0xycKYupxyYtZmQr0he5me15DgNSHW12Yd50QM27SCGct8Gki1nASvFcFqeLbd0gqnXm7nV5Jk5XWTokHw==
