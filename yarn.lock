@@ -1244,14 +1244,15 @@
     unist-util-visit "^2.0.2"
     url-loader "^4.1.0"
 
-"@docusaurus/plugin-client-redirects@2.0.0-alpha.62":
-  version "2.0.0-alpha.62"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-alpha.62.tgz#085fb9bafc0cf0c47844efb594884f83c94f1956"
-  integrity sha512-Dy0P4Uzjb3uKnjkJ6M0pcFxv0Dk4O7KnvM97f5Ow+a6rg28bqWvfNZIYCg7bvQV6qHWuQYqHG10I/N3oZ5DUhA==
+"@docusaurus/plugin-client-redirects@2.0.0-alpha.63":
+  version "2.0.0-alpha.63"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-alpha.63.tgz#42604223d7eb97962e2e7576b0652f73f652ba6b"
+  integrity sha512-KiET6iltFLHXQQDq8JIt4ayjPqwUoCmMBQlzeOHRhVN3kqWvKEUWnFK/ZnIadSIT5p3aWli9vxon1spBeQjYzA==
   dependencies:
-    "@docusaurus/core" "^2.0.0-alpha.62"
-    "@docusaurus/types" "^2.0.0-alpha.62"
-    "@docusaurus/utils" "^2.0.0-alpha.62"
+    "@docusaurus/core" "2.0.0-alpha.63"
+    "@docusaurus/types" "2.0.0-alpha.63"
+    "@docusaurus/utils" "2.0.0-alpha.63"
+    "@docusaurus/utils-validation" "2.0.0-alpha.63"
     "@hapi/joi" "^17.1.1"
     "@types/hapi__joi" "^17.1.2"
     chalk "^3.0.0"
@@ -1445,20 +1446,12 @@
     querystring "0.2.0"
     webpack-merge "^4.2.2"
 
-"@docusaurus/utils-validation@2.0.0-alpha.63":
+"@docusaurus/utils-validation@2.0.0-alpha.63", "@docusaurus/utils-validation@^2.0.0-alpha.62":
   version "2.0.0-alpha.63"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-2.0.0-alpha.63.tgz#78e31bfa289a5c310a018465f232e4c7e369cff8"
   integrity sha512-q+bHBobym6nFiK4nkJEIoPsIdHQDEatHYxv5MU1mzd8jZ2ajHYbvqjA2DWCSEZ4wrkJa0RwoP+9HUKdr3ZAPrA==
   dependencies:
     "@docusaurus/utils" "2.0.0-alpha.63"
-    "@hapi/joi" "17.1.1"
-    chalk "^3.0.0"
-
-"@docusaurus/utils-validation@^2.0.0-alpha.62":
-  version "2.0.0-alpha.62"
-  resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-2.0.0-alpha.62.tgz#aeaf6d7ff4c9730ef5b818d3cbd0716c2e4833ea"
-  integrity sha512-YTr1qF6yDn0aIN7gfx7Emy5oGZ2mbk81T9E37zcZdiXpRfY5lOt8HSWhd4qfe9u1kYSZX+zqEytWl79VV3aMWw==
-  dependencies:
     "@hapi/joi" "17.1.1"
     chalk "^3.0.0"
 
