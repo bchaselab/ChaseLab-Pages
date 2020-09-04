@@ -10,7 +10,7 @@
     "lint-md": "remark ."
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.62",
+    "@docusaurus/core": "2.0.0-alpha.63",
     "@docusaurus/plugin-client-redirects": "2.0.0-alpha.63",
     "@docusaurus/plugin-content-docs": "2.0.0-alpha.62",
     "@docusaurus/plugin-ideal-image": "2.0.0-alpha.61",
