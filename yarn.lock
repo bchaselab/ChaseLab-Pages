@@ -1419,13 +1419,14 @@
     prism-react-renderer "^1.1.0"
     react-live "^2.2.1"
 
-"@docusaurus/theme-search-algolia@2.0.0-alpha.62", "@docusaurus/theme-search-algolia@^2.0.0-alpha.62":
-  version "2.0.0-alpha.62"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.0.0-alpha.62.tgz#35e6ec87682899af1e9453ac8329e45fbbead078"
-  integrity sha512-ttyDSaqgMnejvSi3YYkLcEJhlVoBEeGB2fYNu6fGAAKwximax6lplP2rMQHP7mMW73SU/qG0Dut7eYh4+NrnRA==
+"@docusaurus/theme-search-algolia@2.0.0-alpha.63", "@docusaurus/theme-search-algolia@^2.0.0-alpha.62":
+  version "2.0.0-alpha.63"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.0.0-alpha.63.tgz#d1563706ac4ec1d8096b32b022ac8bceee5c51d9"
+  integrity sha512-fqivQVnYOhPsSF/sjaWw5hZ9ltfnejqcXVlT4BNOHUu9p4Jup5vKkRytbotho1/8JTj/XG22RCPnNAcsBtdRDw==
   dependencies:
     "@docsearch/react" "^1.0.0-alpha.27"
-    "@docusaurus/utils" "^2.0.0-alpha.62"
+    "@docusaurus/core" "2.0.0-alpha.63"
+    "@docusaurus/utils" "2.0.0-alpha.63"
     "@hapi/joi" "^17.1.1"
     algoliasearch "^4.0.0"
     algoliasearch-helper "^3.1.1"
@@ -1460,22 +1461,10 @@
     "@hapi/joi" "17.1.1"
     chalk "^3.0.0"
 
-"@docusaurus/utils@2.0.0-alpha.63":
+"@docusaurus/utils@2.0.0-alpha.63", "@docusaurus/utils@^2.0.0-alpha.62":
   version "2.0.0-alpha.63"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-alpha.63.tgz#a33b10ae8f4920cba7cbc55566ad1c8abd716442"
   integrity sha512-QrRuZAoj11cFgQMvjeNK12ds6y3VvPnYKu0mDpUp6jzB1fSlvIeKdnGR5Ju81LJ1CCXojNQkR8PtNK6kp1+KaA==
-  dependencies:
-    escape-string-regexp "^2.0.0"
-    fs-extra "^8.1.0"
-    gray-matter "^4.0.2"
-    lodash.camelcase "^4.3.0"
-    lodash.kebabcase "^4.1.1"
-    resolve-pathname "^3.0.0"
-
-"@docusaurus/utils@^2.0.0-alpha.62":
-  version "2.0.0-alpha.62"
-  resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-alpha.62.tgz#88fa372d73e4b2aba32c75ebeda9cad49e72b145"
-  integrity sha512-71sw0xycKYupxyYtZmQr0he5me15DgNSHW12Yd50QM27SCGct8Gki1nASvFcFqeLbd0gqnXm7nV5Jk5XWTokHw==
   dependencies:
     escape-string-regexp "^2.0.0"
     fs-extra "^8.1.0"
