@@ -1133,7 +1133,7 @@
     webpack-merge "^4.2.2"
     webpackbar "^4.0.0"
 
-"@docusaurus/core@2.0.0-alpha.64", "@docusaurus/core@^2.0.0-alpha.62":
+"@docusaurus/core@2.0.0-alpha.64":
   version "2.0.0-alpha.64"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-2.0.0-alpha.64.tgz#08031993fcfff78b395091ec06ed1ab38c06e689"
   integrity sha512-lIFAaBz5SvN/vIMrljHwUiT+EGglqmCbKWUXsGwg8FZ86SqkD0T5hPtpaQBIDkerSMzOqntokUEcXB46AQsieQ==
@@ -1221,7 +1221,7 @@
     lodash.sortby "^4.7.0"
     node-vibrant "^3.1.5"
 
-"@docusaurus/mdx-loader@2.0.0-alpha.63", "@docusaurus/mdx-loader@^2.0.0-alpha.62":
+"@docusaurus/mdx-loader@2.0.0-alpha.63":
   version "2.0.0-alpha.63"
   resolved "https://registry.yarnpkg.com/@docusaurus/mdx-loader/-/mdx-loader-2.0.0-alpha.63.tgz#e6b363bdcfae84306aad74a162130672df33ef40"
   integrity sha512-zqnjIOlUSn4sXvZPydYI3z+n9U/9E4bYDn4PHNqNTxPVm5cWk+YPZtq1dP7IGkM5xCZpkApOj4oOh9qmRafoug==
@@ -1230,6 +1230,29 @@
     "@babel/traverse" "^7.9.0"
     "@docusaurus/core" "2.0.0-alpha.63"
     "@docusaurus/utils" "2.0.0-alpha.63"
+    "@mdx-js/mdx" "^1.5.8"
+    "@mdx-js/react" "^1.5.8"
+    escape-html "^1.0.3"
+    file-loader "^6.0.0"
+    fs-extra "^8.1.0"
+    github-slugger "^1.3.0"
+    gray-matter "^4.0.2"
+    loader-utils "^1.2.3"
+    mdast-util-to-string "^1.1.0"
+    remark-emoji "^2.1.0"
+    stringify-object "^3.3.0"
+    unist-util-visit "^2.0.2"
+    url-loader "^4.1.0"
+
+"@docusaurus/mdx-loader@2.0.0-alpha.64":
+  version "2.0.0-alpha.64"
+  resolved "https://registry.yarnpkg.com/@docusaurus/mdx-loader/-/mdx-loader-2.0.0-alpha.64.tgz#c8eea7546ea1c9b3fcde201f582599e465023ed4"
+  integrity sha512-kEBhKq/pQAdks9uri9IALAYuz60sid2f0mXTM/7NZyYTgDeVmeUBlLAMNGQTsMj4KfK3mHyS/ehF04MDnyiv9g==
+  dependencies:
+    "@babel/parser" "^7.9.4"
+    "@babel/traverse" "^7.9.0"
+    "@docusaurus/core" "2.0.0-alpha.64"
+    "@docusaurus/utils" "2.0.0-alpha.64"
     "@mdx-js/mdx" "^1.5.8"
     "@mdx-js/react" "^1.5.8"
     escape-html "^1.0.3"
@@ -1282,34 +1305,6 @@
     remark-admonitions "^1.2.1"
     webpack "^4.41.2"
 
-"@docusaurus/plugin-content-docs@2.0.0-alpha.62":
-  version "2.0.0-alpha.62"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-alpha.62.tgz#49df44e7eee636daafe2be1fcf76392511480d14"
-  integrity sha512-thZFLfwc8kPBygSY8MMmjv+y4vdhdFtF4uK4Z5cvk+ClNICHv0BVScEkz6SSafR7WEBENGAmWMFzWBinzzSnpw==
-  dependencies:
-    "@docusaurus/core" "^2.0.0-alpha.62"
-    "@docusaurus/mdx-loader" "^2.0.0-alpha.62"
-    "@docusaurus/types" "^2.0.0-alpha.62"
-    "@docusaurus/utils" "^2.0.0-alpha.62"
-    "@docusaurus/utils-validation" "^2.0.0-alpha.62"
-    "@hapi/joi" "17.1.1"
-    chalk "^3.0.0"
-    execa "^3.4.0"
-    fs-extra "^8.1.0"
-    globby "^10.0.1"
-    import-fresh "^3.2.1"
-    loader-utils "^1.2.3"
-    lodash "^4.17.19"
-    lodash.flatmap "^4.5.0"
-    lodash.groupby "^4.6.0"
-    lodash.pick "^4.4.0"
-    lodash.pickby "^4.6.0"
-    lodash.sortby "^4.6.0"
-    remark-admonitions "^1.2.1"
-    shelljs "^0.8.4"
-    utility-types "^3.10.0"
-    webpack "^4.41.2"
-
 "@docusaurus/plugin-content-docs@2.0.0-alpha.63":
   version "2.0.0-alpha.63"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-alpha.63.tgz#1971291320c66e7b5767f0a9e2feccafc4d8b7dd"
@@ -1337,6 +1332,34 @@
     shelljs "^0.8.4"
     utility-types "^3.10.0"
     webpack "^4.41.2"
+
+"@docusaurus/plugin-content-docs@2.0.0-alpha.64":
+  version "2.0.0-alpha.64"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-alpha.64.tgz#a0508893395ae1eac44bdf9c99bdd5ef5010cf45"
+  integrity sha512-3O2tHZd0OKLuGPfMTo3R5iMX/tM+QxB81uN0YBgyhwV7kKL46LpE+AYKYqk+oSCH0MfMBREcLgEyni4KgJNbHg==
+  dependencies:
+    "@docusaurus/core" "2.0.0-alpha.64"
+    "@docusaurus/mdx-loader" "2.0.0-alpha.64"
+    "@docusaurus/types" "2.0.0-alpha.64"
+    "@docusaurus/utils" "2.0.0-alpha.64"
+    "@docusaurus/utils-validation" "2.0.0-alpha.64"
+    "@hapi/joi" "17.1.1"
+    chalk "^3.0.0"
+    execa "^3.4.0"
+    fs-extra "^8.1.0"
+    globby "^10.0.1"
+    import-fresh "^3.2.1"
+    loader-utils "^1.2.3"
+    lodash "^4.17.19"
+    lodash.flatmap "^4.5.0"
+    lodash.groupby "^4.6.0"
+    lodash.pick "^4.4.0"
+    lodash.pickby "^4.6.0"
+    lodash.sortby "^4.6.0"
+    remark-admonitions "^1.2.1"
+    shelljs "^0.8.4"
+    utility-types "^3.10.0"
+    webpack "^4.44.1"
 
 "@docusaurus/plugin-content-pages@2.0.0-alpha.63":
   version "2.0.0-alpha.63"
@@ -1490,7 +1513,7 @@
     eta "^1.1.1"
     lodash "^4.17.19"
 
-"@docusaurus/types@2.0.0-alpha.63", "@docusaurus/types@^2.0.0-alpha.62":
+"@docusaurus/types@2.0.0-alpha.63":
   version "2.0.0-alpha.63"
   resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-2.0.0-alpha.63.tgz#6733479ba8e0aebba183da510e7d74e3cdf45356"
   integrity sha512-rzCYQKrB8xArXfSoad0RM1VtGfhmsSC3wXLVNrCFXp3F9sPTgRuev5jfEfvMWbJdkLZasNA4eNbMJ6JlrnfE4Q==
@@ -1510,7 +1533,7 @@
     querystring "0.2.0"
     webpack-merge "^4.2.2"
 
-"@docusaurus/utils-validation@2.0.0-alpha.63", "@docusaurus/utils-validation@^2.0.0-alpha.62":
+"@docusaurus/utils-validation@2.0.0-alpha.63":
   version "2.0.0-alpha.63"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-2.0.0-alpha.63.tgz#78e31bfa289a5c310a018465f232e4c7e369cff8"
   integrity sha512-q+bHBobym6nFiK4nkJEIoPsIdHQDEatHYxv5MU1mzd8jZ2ajHYbvqjA2DWCSEZ4wrkJa0RwoP+9HUKdr3ZAPrA==
@@ -1540,7 +1563,7 @@
     lodash.kebabcase "^4.1.1"
     resolve-pathname "^3.0.0"
 
-"@docusaurus/utils@2.0.0-alpha.64", "@docusaurus/utils@^2.0.0-alpha.62":
+"@docusaurus/utils@2.0.0-alpha.64":
   version "2.0.0-alpha.64"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-alpha.64.tgz#ed8da246504d68d4e817929806962cbee76e0b60"
   integrity sha512-rvRNTSNL0BQnO15/dZRO3MsZwcnglvm1aBl/9qbPVBVS82/VdoUB8YZ5QGrCQewXugQBkYqZU2cx+khDhNICvw==
@@ -3293,7 +3316,7 @@ chokidar@^2.1.8:
   optionalDependencies:
     fsevents "^1.2.7"
 
-chokidar@^3.0.0, chokidar@^3.3.0, chokidar@^3.4.0:
+chokidar@^3.0.0, chokidar@^3.3.0:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.1.tgz#e905bdecf10eaa0a0b1db0c664481cc4cbc22ba1"
   integrity sha512-TQTJyr2stihpC4Sya9hs2Xh+O2wf+igjL36Y75xx2WdHuiICcn/XJza46Jwt0eT5hVpQOzo3FpY3cj3RVYLX0g==
@@ -4524,7 +4547,7 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0, end-of-stream@^1.4.1:
   dependencies:
     once "^1.4.0"
 
-enhanced-resolve@^4.1.0, enhanced-resolve@^4.3.0:
+enhanced-resolve@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-4.3.0.tgz#3b806f3bfafc1ec7de69551ef93cca46c1704126"
   integrity sha512-3e87LvavsdxyoCfGusJnrZ5G8SLPOFeHSNpZI/ATL9a5leXo2k0w6MKnbqhdBad9qTobSfB20Ld7UmgoNbAZkQ==
@@ -11824,17 +11847,6 @@ watchpack-chokidar2@^2.0.0:
   dependencies:
     chokidar "^2.1.8"
 
-watchpack@^1.6.1:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.2.tgz#c02e4d4d49913c3e7e122c3325365af9d331e9aa"
-  integrity sha512-ymVbbQP40MFTp+cNMvpyBpBtygHnPzPkHqoIwRRj/0B8KhqQwV8LaKjtbaxF2lK4vl8zN9wCxS46IFCU5K4W0g==
-  dependencies:
-    graceful-fs "^4.1.2"
-    neo-async "^2.5.0"
-  optionalDependencies:
-    chokidar "^3.4.0"
-    watchpack-chokidar2 "^2.0.0"
-
 watchpack@^1.7.4:
   version "1.7.4"
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.4.tgz#6e9da53b3c80bb2d6508188f5b200410866cd30b"
@@ -11955,36 +11967,7 @@ webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.41.2:
-  version "4.43.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.43.0.tgz#c48547b11d563224c561dad1172c8aa0b8a678e6"
-  integrity sha512-GW1LjnPipFW2Y78OOab8NJlCflB7EFskMih2AHdvjbpKMeDJqEgSx24cXXXiPS65+WSwVyxtDsJH6jGX2czy+g==
-  dependencies:
-    "@webassemblyjs/ast" "1.9.0"
-    "@webassemblyjs/helper-module-context" "1.9.0"
-    "@webassemblyjs/wasm-edit" "1.9.0"
-    "@webassemblyjs/wasm-parser" "1.9.0"
-    acorn "^6.4.1"
-    ajv "^6.10.2"
-    ajv-keywords "^3.4.1"
-    chrome-trace-event "^1.0.2"
-    enhanced-resolve "^4.1.0"
-    eslint-scope "^4.0.3"
-    json-parse-better-errors "^1.0.2"
-    loader-runner "^2.4.0"
-    loader-utils "^1.2.3"
-    memory-fs "^0.4.1"
-    micromatch "^3.1.10"
-    mkdirp "^0.5.3"
-    neo-async "^2.6.1"
-    node-libs-browser "^2.2.1"
-    schema-utils "^1.0.0"
-    tapable "^1.1.3"
-    terser-webpack-plugin "^1.4.3"
-    watchpack "^1.6.1"
-    webpack-sources "^1.4.1"
-
-webpack@^4.44.1:
+webpack@^4.41.2, webpack@^4.44.1:
   version "4.44.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.44.1.tgz#17e69fff9f321b8f117d1fda714edfc0b939cc21"
   integrity sha512-4UOGAohv/VGUNQJstzEywwNxqX417FnjZgZJpJQegddzPmTvph37eBIRbRTfdySXzVtJXLJfbMN3mMYhM6GdmQ==
