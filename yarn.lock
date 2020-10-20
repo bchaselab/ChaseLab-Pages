@@ -1420,12 +1420,12 @@
     react-toggle "^4.1.1"
     use-onclickoutside "^0.3.1"
 
-"@docusaurus/theme-live-codeblock@2.0.0-alpha.65":
-  version "2.0.0-alpha.65"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.65.tgz#9fe26d28cc61877a3fa0309c9f9af0face0c1337"
-  integrity sha512-9SInZC5C6CUTw4fhYzQldQiO8H7ligu/z7UX/4i/pXmwJ/t5UAzD7p17U1O6o3J4lj5zxNTUQYSkTMyH2RjATA==
+"@docusaurus/theme-live-codeblock@2.0.0-alpha.66":
+  version "2.0.0-alpha.66"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.66.tgz#25a2ad68499963752ab1451acfab855a56454cfe"
+  integrity sha512-EHDvl5vwZat2N87GuC08PfyB+aMCmH5ngw09fZJXwH4zvkloV67n2GShl7/B0GY6MD4od9QqCZ8tr5eNKqPLkQ==
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.65"
+    "@docusaurus/core" "2.0.0-alpha.66"
     "@philpl/buble" "^0.19.7"
     clsx "^1.1.1"
     parse-numeric-range "^0.0.2"
