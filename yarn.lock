@@ -1447,6 +1447,21 @@
     eta "^1.1.1"
     lodash "^4.17.19"
 
+"@docusaurus/theme-search-algolia@2.0.0-alpha.66":
+  version "2.0.0-alpha.66"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.0.0-alpha.66.tgz#a808c8618523f473c85c691ea62388688de5e32a"
+  integrity sha512-5k/Fwt81Gyjv9vPE+gO8mraEHx5IqEmHLwqld5yXj7yix5XrxywkaanHqC0cFJG4MFUBgF6vNjJC8CtfLnT4Tw==
+  dependencies:
+    "@docsearch/react" "^1.0.0-alpha.27"
+    "@docusaurus/core" "2.0.0-alpha.66"
+    "@docusaurus/utils" "2.0.0-alpha.66"
+    "@hapi/joi" "^17.1.1"
+    algoliasearch "^4.0.0"
+    algoliasearch-helper "^3.1.1"
+    clsx "^1.1.1"
+    eta "^1.1.1"
+    lodash "^4.17.19"
+
 "@docusaurus/types@2.0.0-alpha.65":
   version "2.0.0-alpha.65"
   resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-2.0.0-alpha.65.tgz#e47104e7198ee3708d4f0d82c9fcb1aa2c118ab5"
