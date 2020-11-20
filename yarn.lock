@@ -2275,17 +2275,17 @@
     react-router-dom "^5.1.2"
     react-toggle "^4.1.1"
 
-"@docusaurus/theme-live-codeblock@2.0.0-alpha.66":
-  version "2.0.0-alpha.66"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.66.tgz#25a2ad68499963752ab1451acfab855a56454cfe"
-  integrity sha512-EHDvl5vwZat2N87GuC08PfyB+aMCmH5ngw09fZJXwH4zvkloV67n2GShl7/B0GY6MD4od9QqCZ8tr5eNKqPLkQ==
+"@docusaurus/theme-live-codeblock@2.0.0-alpha.68":
+  version "2.0.0-alpha.68"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.68.tgz#19e26c4f1661d977ce9ae95b6117c411aee64082"
+  integrity sha512-xHBp6xYLry7YTRNJXAG9csXzRINhFUn62eACdkHSkq/m0z7NCMJBZGOtJfFC3i6pDH+78jNljqu37vBBBs6KyQ==
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.66"
+    "@docusaurus/core" "2.0.0-alpha.68"
     "@philpl/buble" "^0.19.7"
     clsx "^1.1.1"
-    parse-numeric-range "^0.0.2"
-    prism-react-renderer "^1.1.0"
-    react-live "^2.2.1"
+    parse-numeric-range "^1.2.0"
+    prism-react-renderer "^1.1.1"
+    react-live "^2.2.3"
 
 "@docusaurus/theme-search-algolia@2.0.0-alpha.66":
   version "2.0.0-alpha.66"
@@ -4787,14 +4787,6 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-context@0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.2.2.tgz#9836542f9aaa22868cd7d4a6f82667df38019dca"
-  integrity sha512-KkpaLARMhsTsgp0d2NA/R94F/eDLbhXERdIq3LvX2biCAXcDvHYoOqHfWCHf1+OLj+HKBotLG3KqaOOf+C1C+A==
-  dependencies:
-    fbjs "^0.8.0"
-    gud "^1.0.0"
-
 cross-spawn@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.1.tgz#0ab56286e0f7c24e153d04cc2aa027e43a9a5d14"
@@ -6429,11 +6421,6 @@ gray-matter@^4.0.2:
     kind-of "^6.0.2"
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
-
-gud@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
-  integrity sha512-zGEOVKFM5sVPPrYs7J5/hYEw2Pof8KCyOwyhG8sAF26mCAeUFAcYPu1mwB7hhpIP29zOIBaDqwuHdLp0jvZXjw==
 
 gzip-size@5.1.1, gzip-size@^5.0.0:
   version "5.1.1"
@@ -9145,7 +9132,7 @@ parse-json@^5.0.0:
     json-parse-better-errors "^1.0.1"
     lines-and-columns "^1.1.6"
 
-parse-numeric-range@1.2.0:
+parse-numeric-range@1.2.0, parse-numeric-range@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/parse-numeric-range/-/parse-numeric-range-1.2.0.tgz#aa70b00f29624ed13e9f943e9461b306e386b0fa"
   integrity sha512-1q2tXpAOplPxcl8vrIGPWz1dJxxfmdRkCFcpxxMBerDnGuuHalOWF/xj9L8Nn5XoTUoB/6F0CeQBp2fMgkOYFg==
@@ -10132,7 +10119,7 @@ pretty-time@^1.1.0:
   resolved "https://registry.yarnpkg.com/pretty-time/-/pretty-time-1.1.0.tgz#ffb7429afabb8535c346a34e41873adf3d74dd0e"
   integrity sha512-28iF6xPQrP8Oa6uxE6a1biz+lWeTOAPKggvjB8HAs6nVMKZwf5bG++632Dx614hIWgUPkgivRfG+a8uAXGTIbA==
 
-prism-react-renderer@1.1.1, prism-react-renderer@^1.0.1, prism-react-renderer@^1.1.0:
+prism-react-renderer@1.1.1, prism-react-renderer@^1.0.1, prism-react-renderer@^1.1.0, prism-react-renderer@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-1.1.1.tgz#1c1be61b1eb9446a146ca7a50b7bcf36f2a70a44"
   integrity sha512-MgMhSdHuHymNRqD6KM3eGS0PNqgK9q4QF5P0yoQQvpB6jNjeSAi3jcSAz0Sua/t9fa4xDOMar9HJbLa08gl9ug==
@@ -10436,27 +10423,13 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-live@2.2.3:
+react-live@2.2.3, react-live@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/react-live/-/react-live-2.2.3.tgz#260f99194213799f0005e473e7a4154c699d6a7c"
   integrity sha512-tpKruvfytNETuzO3o1mrQUj180GVrq35IE8F5gH1NJVPt4szYCx83/dOSCOyjgRhhc3gQvl0pQ3k/CjOjwJkKQ==
   dependencies:
     buble "0.19.6"
     core-js "^2.4.1"
-    dom-iterator "^1.0.0"
-    prism-react-renderer "^1.0.1"
-    prop-types "^15.5.8"
-    react-simple-code-editor "^0.10.0"
-    unescape "^1.0.1"
-
-react-live@^2.2.1:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/react-live/-/react-live-2.2.2.tgz#834edf1c11204e49fa7468166316b2e70da1a6b0"
-  integrity sha512-kJYAzKnPsR4oXleAX9lLsJA330BhTmSWHhr3ienZA2E/0eFDRodGl3I7sge8pp1vjc2K5Aaz73KpFUnV7Lq/DQ==
-  dependencies:
-    buble "0.19.6"
-    core-js "^2.4.1"
-    create-react-context "0.2.2"
     dom-iterator "^1.0.0"
     prism-react-renderer "^1.0.1"
     prop-types "^15.5.8"
