@@ -14,7 +14,7 @@
     "@docusaurus/plugin-client-redirects": "2.0.0-alpha.66",
     "@docusaurus/plugin-content-docs": "2.0.0-alpha.68",
     "@docusaurus/plugin-ideal-image": "2.0.0-alpha.66",
-    "@docusaurus/preset-classic": "2.0.0-alpha.66",
+    "@docusaurus/preset-classic": "2.0.0-alpha.68",
     "@docusaurus/theme-live-codeblock": "2.0.0-alpha.66",
     "@docusaurus/theme-search-algolia": "2.0.0-alpha.68",
     "clsx": "1.1.1",
