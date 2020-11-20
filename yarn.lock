@@ -2072,22 +2072,21 @@
     url-loader "^4.1.1"
     webpack "^4.44.1"
 
-"@docusaurus/plugin-client-redirects@2.0.0-alpha.66":
-  version "2.0.0-alpha.66"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-alpha.66.tgz#4621edb564be5e5b49bff50b1cc736a18b9e49fd"
-  integrity sha512-0p2QmDmDN4Ul6t2TMNe6e/7mQqb/RqjmSoz2RaQoxtCVj3lz+WRtQvXEKERlyu6smfQisXE9Ikd/o/bXoJqB9w==
+"@docusaurus/plugin-client-redirects@2.0.0-alpha.68":
+  version "2.0.0-alpha.68"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-alpha.68.tgz#037ee7a31c7e7c56427a003309f712e625c51be0"
+  integrity sha512-HY0bk1vLw5/cwr7UoyCSAzRsIncUNTUZqCmKNc0w3mFWJ1eLmcJ8M7Z5cG6lhGZXz4jYx362fwrRvBSNF9CFcA==
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.66"
-    "@docusaurus/types" "2.0.0-alpha.66"
-    "@docusaurus/utils" "2.0.0-alpha.66"
-    "@docusaurus/utils-validation" "2.0.0-alpha.66"
-    "@hapi/joi" "^17.1.1"
-    "@types/hapi__joi" "^17.1.2"
+    "@docusaurus/core" "2.0.0-alpha.68"
+    "@docusaurus/types" "2.0.0-alpha.68"
+    "@docusaurus/utils" "2.0.0-alpha.68"
+    "@docusaurus/utils-validation" "2.0.0-alpha.68"
     chalk "^3.0.0"
-    eta "^1.1.1"
+    eta "^1.11.0"
     fs-extra "^8.1.0"
     globby "^10.0.1"
-    lodash "^4.17.15"
+    joi "^17.2.1"
+    lodash "^4.17.20"
 
 "@docusaurus/plugin-content-blog@2.0.0-alpha.66":
   version "2.0.0-alpha.66"
@@ -2883,11 +2882,6 @@
   dependencies:
     "@types/minimatch" "*"
     "@types/node" "*"
-
-"@types/hapi__joi@^17.1.2":
-  version "17.1.4"
-  resolved "https://registry.yarnpkg.com/@types/hapi__joi/-/hapi__joi-17.1.4.tgz#e46cd1bd81d25cd45247d652dadb3666514d807c"
-  integrity sha512-gqY3TeTyZvnyNhM02HgyCIoGIWsTFMnuzMfnD8evTsr1KIfueGJaz+QC77j+dFvhZ5cJArUNjDRHUjPxNohzGA==
 
 "@types/hast@^2.0.0":
   version "2.3.1"
