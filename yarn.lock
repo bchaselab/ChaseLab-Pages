@@ -2016,14 +2016,16 @@
     postcss-combine-duplicated-selectors "^9.1.0"
     postcss-sort-media-queries "^1.7.26"
 
-"@docusaurus/lqip-loader@2.0.0-alpha.66":
-  version "2.0.0-alpha.66"
-  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.66.tgz#0357665c0d0d46804e16f3439deae0fa385c553b"
-  integrity sha512-Jt9d2RuyWghbtvzQyKmGh8t4V6ij3iCCpIcRgryTyyLPyTUDy52JuPwTwNAXOrDs1RHHFESSXFe8aCPBZIjTMg==
+"@docusaurus/lqip-loader@2.0.0-alpha.68":
+  version "2.0.0-alpha.68"
+  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.68.tgz#02aee29394ef35d846b27af482e326e1a8178399"
+  integrity sha512-t9ZlViH5ainmNwha99G3xGnnFAHwt58L+5dPV3zcI2vPTRtt4R5XjTq3PE5rM/q6w7TYT3GoN56RRPu6LiMa/g==
   dependencies:
+    file-loader "^6.2.0"
     loader-utils "^1.2.3"
     lodash.sortby "^4.7.0"
     node-vibrant "^3.1.5"
+    sharp "^0.25.2"
 
 "@docusaurus/mdx-loader@2.0.0-alpha.66":
   version "2.0.0-alpha.66"
@@ -2208,14 +2210,14 @@
   dependencies:
     "@docusaurus/core" "2.0.0-alpha.66"
 
-"@docusaurus/plugin-ideal-image@2.0.0-alpha.66":
-  version "2.0.0-alpha.66"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.66.tgz#034abe3db9a586085162c749be0c44d3c9dcd7ef"
-  integrity sha512-tNzp+8shopZXKkBbzLaBWYzRNs9+nce6Jw8HCxT8anBINfhfALx3zYVYSzuc7vJpmE0vgytsBv8jN1EH8Y473g==
+"@docusaurus/plugin-ideal-image@2.0.0-alpha.68":
+  version "2.0.0-alpha.68"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.68.tgz#b95261e5b816adab842c929e4dbb9665400f1956"
+  integrity sha512-xaKRooWos/ljhHb9CY5a2mRgzPj2+mp1G3E0vGhtGirv18PCwAiJAouhbRutNKpekJs2Sg2Fiw3Jko1l1gSndw==
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.66"
-    "@docusaurus/lqip-loader" "2.0.0-alpha.66"
-    "@docusaurus/types" "2.0.0-alpha.66"
+    "@docusaurus/core" "2.0.0-alpha.68"
+    "@docusaurus/lqip-loader" "2.0.0-alpha.68"
+    "@docusaurus/types" "2.0.0-alpha.68"
     "@endiliey/react-ideal-image" "^0.0.11"
     "@endiliey/responsive-loader" "^1.3.2"
     react-waypoint "^9.0.2"
