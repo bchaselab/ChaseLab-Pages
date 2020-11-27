@@ -2057,15 +2057,15 @@
     url-loader "^4.1.1"
     webpack "^4.44.1"
 
-"@docusaurus/plugin-client-redirects@2.0.0-alpha.bd62be93d":
-  version "2.0.0-alpha.bd62be93d"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-alpha.bd62be93d.tgz#f979275e585dd7b1e2b0d1e29028fe80aeec77d5"
-  integrity sha512-SU/IjGhFHbVudSlWdweoRbcm/93OGqWto4lhvQ4facioyNT5zDA2EHZzfLo6JsHH2ZP9B4nZ40LNSYrE7iyCYg==
+"@docusaurus/plugin-client-redirects@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-alpha.69.tgz#a31c1f4b11d98b362803d8878dafb952d4a3508e"
+  integrity sha512-ll4DNRKg0J6rRZdsviS6BG3LkA6sxSua/qYPr0ZymPMoaKJZLlyTmuLVKCwftIziri/khPL2J/Z+jQEJIBKWIQ==
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.bd62be93d"
-    "@docusaurus/types" "2.0.0-alpha.bd62be93d"
-    "@docusaurus/utils" "2.0.0-alpha.bd62be93d"
-    "@docusaurus/utils-validation" "2.0.0-alpha.bd62be93d"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
+    "@docusaurus/utils" "2.0.0-alpha.69"
+    "@docusaurus/utils-validation" "2.0.0-alpha.69"
     chalk "^3.0.0"
     eta "^1.11.0"
     fs-extra "^9.0.1"
