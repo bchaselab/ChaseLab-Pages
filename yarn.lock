@@ -2282,12 +2282,12 @@
     "@docusaurus/plugin-content-pages" "2.0.0-alpha.bd62be93d"
     "@docusaurus/types" "2.0.0-alpha.bd62be93d"
 
-"@docusaurus/theme-live-codeblock@2.0.0-alpha.bd62be93d":
-  version "2.0.0-alpha.bd62be93d"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.bd62be93d.tgz#a6199b7fb359a7b234255e96bc23d156047f40ba"
-  integrity sha512-SKoVwFPLbAynz6X3sfEkNounhsQl71i6kAuMCzJVx8jQvh31g2QhiL1mTiodVSHRWKCjlTWksVqKaqSVwNzczw==
+"@docusaurus/theme-live-codeblock@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.69.tgz#e9c0cbee261ebbe32cbd06057941d4cdc64c6e60"
+  integrity sha512-rLd2466o3nZLTgvue/nM/MLATHdWjr+6/TxCiYS8AUaLZTOjDjzY5PYttOFZIolVBvC9fwjj8+G2eFwlYNGfGw==
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.bd62be93d"
+    "@docusaurus/core" "2.0.0-alpha.69"
     "@philpl/buble" "^0.19.7"
     clsx "^1.1.1"
     parse-numeric-range "^1.2.0"
