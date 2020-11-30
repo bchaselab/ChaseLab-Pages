@@ -12,7 +12,7 @@
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.bd62be93d",
     "@docusaurus/plugin-client-redirects": "2.0.0-alpha.69",
-    "@docusaurus/plugin-content-docs": "2.0.0-alpha.bd62be93d",
+    "@docusaurus/plugin-content-docs": "2.0.0-alpha.69",
     "@docusaurus/plugin-ideal-image": "2.0.0-alpha.69",
     "@docusaurus/preset-classic": "2.0.0-alpha.69",
     "@docusaurus/theme-live-codeblock": "2.0.0-alpha.69",
