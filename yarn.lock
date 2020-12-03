@@ -2007,10 +2007,10 @@
     postcss-combine-duplicated-selectors "^9.1.0"
     postcss-sort-media-queries "^1.7.26"
 
-"@docusaurus/lqip-loader@2.0.0-alpha.f37987f32":
-  version "2.0.0-alpha.f37987f32"
-  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.f37987f32.tgz#3ce1157b64be38613ebb5940a492f82a5e1b8183"
-  integrity sha512-4UNwES3T+xeiitNaenxCI4TR1vooiAtSNryRxNDAAIMmJS/KY34ECLv/soodRNoKQwIlsifrJvdKaYIJhF07vA==
+"@docusaurus/lqip-loader@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.yarnpkg.com/@docusaurus/lqip-loader/-/lqip-loader-2.0.0-alpha.69.tgz#1ac69dcd0ce7be1e3e6d99e066e39b8373b58f61"
+  integrity sha512-h4zkBBQEIr4Q3K3JxPZZy5z3Q6PraA0gkJ3uipmwjq43lYLHnX4bvPO3O4pYgg124dNgbRYSJcjX2JtopM5Mhg==
   dependencies:
     file-loader "^6.2.0"
     loader-utils "^1.2.3"
@@ -2150,14 +2150,14 @@
   dependencies:
     "@docusaurus/core" "2.0.0-alpha.f37987f32"
 
-"@docusaurus/plugin-ideal-image@2.0.0-alpha.f37987f32":
-  version "2.0.0-alpha.f37987f32"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.f37987f32.tgz#69501f93785251f797a8f81b9fef0763bf958f84"
-  integrity sha512-I1Oc69KWsd72jNyhHh2UTJZnYJV3j0VIVGGI+uUPWt0AblOUZ9qzsO5nW0CUPO8jZnwPm00XEG2pZib121MkTQ==
+"@docusaurus/plugin-ideal-image@2.0.0-alpha.69":
+  version "2.0.0-alpha.69"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-ideal-image/-/plugin-ideal-image-2.0.0-alpha.69.tgz#1b1eb6a5225cced864ded9e11d1d4b33317c5e93"
+  integrity sha512-OkQ7u79HzHPftTtZ4A5lAP2iDhjEjF6BSGeFU3dqdpoupw6WroQfAJEdsle1Hyh3yTTkQuANLgTcFlOB0NxPjQ==
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.f37987f32"
-    "@docusaurus/lqip-loader" "2.0.0-alpha.f37987f32"
-    "@docusaurus/types" "2.0.0-alpha.f37987f32"
+    "@docusaurus/core" "2.0.0-alpha.69"
+    "@docusaurus/lqip-loader" "2.0.0-alpha.69"
+    "@docusaurus/types" "2.0.0-alpha.69"
     "@endiliey/react-ideal-image" "^0.0.11"
     "@endiliey/responsive-loader" "^1.3.2"
     react-waypoint "^9.0.2"
