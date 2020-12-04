@@ -2,25 +2,6 @@
 # yarn lockfile v1
 
 
-"@algolia/autocomplete-core@^1.0.0-alpha.35":
-  version "1.0.0-alpha.35"
-  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-core/-/autocomplete-core-1.0.0-alpha.35.tgz#a54949edf7b402da6fd6cf08943438bfb802aa50"
-  integrity sha512-KnogrTLI75wCjX4YD+/mKZyoodpebMtyxYq0pxwH3MHFNJ43U+wwLcLTpDqho0ZsrHhx6/boZuZsdyWhxIyGDg==
-  dependencies:
-    "@algolia/autocomplete-shared" "1.0.0-alpha.35"
-
-"@algolia/autocomplete-preset-algolia@^1.0.0-alpha.35":
-  version "1.0.0-alpha.35"
-  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.0.0-alpha.35.tgz#b1218a689caa66b607a532c2e363973309764158"
-  integrity sha512-9MNEkVbPW/oJKJmWYcI1Q34E4v82LI1EWCxyYQdN5yGg8bdK8yRzjNqqoctVDz4SA1Mtis0IEPbPzzx41IUg5Q==
-  dependencies:
-    "@algolia/autocomplete-shared" "1.0.0-alpha.35"
-
-"@algolia/autocomplete-shared@1.0.0-alpha.35":
-  version "1.0.0-alpha.35"
-  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.0.0-alpha.35.tgz#d6819cb1420a389ac9894199bda2c7abd276fd3d"
-  integrity sha512-KNZxFImmcuL15PbrFN5V/Xn+/oqAaF9BS3UILnf04yAjbGbA4oixjNndxGe+RUFKj531Sr+hwja4+4bxa0TmEQ==
-
 "@algolia/cache-browser-local-storage@4.3.1":
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/@algolia/cache-browser-local-storage/-/cache-browser-local-storage-4.3.1.tgz#2adbb3de8adebf2c938fb8dc94359a89366017b9"
@@ -1808,11 +1789,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@docsearch/css@3.0.0-alpha.32":
-  version "3.0.0-alpha.32"
-  resolved "https://registry.yarnpkg.com/@docsearch/css/-/css-3.0.0-alpha.32.tgz#3d89c8db4035531d201f74ef2115f72094a24036"
-  integrity sha512-wafLX/jT1NPAwifPhzMJX394PjKdqf5TA4cz/JgvBYR1/+MiErLk/pyCmocXkawWGR17/6u2qw3wYvXu/Qe/DQ==
-
 "@docsearch/css@^1.0.0-alpha.28":
   version "1.0.0-alpha.28"
   resolved "https://registry.yarnpkg.com/@docsearch/css/-/css-1.0.0-alpha.28.tgz#c8a2cd8c1bb3a6855c51892e9dbdab5d42fe6e23"
@@ -1826,16 +1802,6 @@
     "@docsearch/css" "^1.0.0-alpha.28"
     "@francoischalifour/autocomplete-core" "^1.0.0-alpha.28"
     "@francoischalifour/autocomplete-preset-algolia" "^1.0.0-alpha.28"
-    algoliasearch "^4.0.0"
-
-"@docsearch/react@^3.0.0-alpha.31":
-  version "3.0.0-alpha.32"
-  resolved "https://registry.yarnpkg.com/@docsearch/react/-/react-3.0.0-alpha.32.tgz#ae3fa82e9c88683d9415bc439c4af7e2c0cfa5b7"
-  integrity sha512-2jqzPJu4y0mWiwwm+Kfgf/97Q8XaGxj1+jJfGJpJLkJyD8S2tK4OikyIRWI9gI9k3m48HxFm0+P8uAYYtIyjqA==
-  dependencies:
-    "@algolia/autocomplete-core" "^1.0.0-alpha.35"
-    "@algolia/autocomplete-preset-algolia" "^1.0.0-alpha.35"
-    "@docsearch/css" "3.0.0-alpha.32"
     algoliasearch "^4.0.0"
 
 "@docusaurus/core@2.0.0-alpha.69":
@@ -2118,27 +2084,6 @@
     remark-admonitions "^1.2.1"
     webpack "^4.44.1"
 
-"@docusaurus/plugin-content-blog@2.0.0-alpha.f37987f32":
-  version "2.0.0-alpha.f37987f32"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-blog/-/plugin-content-blog-2.0.0-alpha.f37987f32.tgz#bd430d98745d99fc486b4e5c65a9b346d53b3995"
-  integrity sha512-QRXYujWca6cvCS6zlf9JgZpMDkM2XD1/9N5jAjseUt1rB8ZJVmKjU5Jp7qKBWzPP7JpuRz98+CteUa93QIGmwA==
-  dependencies:
-    "@docusaurus/core" "2.0.0-alpha.f37987f32"
-    "@docusaurus/mdx-loader" "2.0.0-alpha.f37987f32"
-    "@docusaurus/types" "2.0.0-alpha.f37987f32"
-    "@docusaurus/utils" "2.0.0-alpha.f37987f32"
-    "@docusaurus/utils-validation" "2.0.0-alpha.f37987f32"
-    chalk "^3.0.0"
-    feed "^4.2.1"
-    fs-extra "^9.0.1"
-    globby "^10.0.1"
-    joi "^17.2.1"
-    loader-utils "^1.2.3"
-    lodash "^4.17.20"
-    reading-time "^1.2.0"
-    remark-admonitions "^1.2.1"
-    webpack "^4.44.1"
-
 "@docusaurus/plugin-content-docs@2.0.0-alpha.69":
   version "2.0.0-alpha.69"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-alpha.69.tgz#5ef4d293765d02e11ffb2a201c491a34f92e2a83"
@@ -2208,25 +2153,6 @@
     globby "^10.0.1"
     joi "^17.2.1"
     loader-utils "^1.2.3"
-    minimatch "^3.0.4"
-    remark-admonitions "^1.2.1"
-    slash "^3.0.0"
-    webpack "^4.44.1"
-
-"@docusaurus/plugin-content-pages@2.0.0-alpha.f37987f32":
-  version "2.0.0-alpha.f37987f32"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-pages/-/plugin-content-pages-2.0.0-alpha.f37987f32.tgz#627931ce0e4d7711362d5d9179c44b623fc5e9a0"
-  integrity sha512-h+KqqaYZYZ9DaGxTLavOnMGOXZ3T0Pn4S3XJuHF+tdxCB//b/sPdY4aEjM4sdGgNqN0il9Y+yVORoN0F7XRJ1Q==
-  dependencies:
-    "@docusaurus/core" "2.0.0-alpha.f37987f32"
-    "@docusaurus/mdx-loader" "2.0.0-alpha.f37987f32"
-    "@docusaurus/types" "2.0.0-alpha.f37987f32"
-    "@docusaurus/utils" "2.0.0-alpha.f37987f32"
-    "@docusaurus/utils-validation" "2.0.0-alpha.f37987f32"
-    globby "^10.0.1"
-    joi "^17.2.1"
-    loader-utils "^1.2.3"
-    lodash "^4.17.19"
     minimatch "^3.0.4"
     remark-admonitions "^1.2.1"
     slash "^3.0.0"
@@ -2335,17 +2261,6 @@
     "@docusaurus/plugin-content-pages" "2.0.0-alpha.69"
     "@docusaurus/types" "2.0.0-alpha.69"
 
-"@docusaurus/theme-common@2.0.0-alpha.f37987f32":
-  version "2.0.0-alpha.f37987f32"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-common/-/theme-common-2.0.0-alpha.f37987f32.tgz#a17c99447ec69ef6a0639d5b7e6da7a3d5a3220c"
-  integrity sha512-xfqQA0RiFIw63zpNkoMaslO2H+z5dB5Wf1PExBOq+r/a0YvaSez5dnexPgqS4fJmJtwNrxb0tCw9vAC01OWxgQ==
-  dependencies:
-    "@docusaurus/core" "2.0.0-alpha.f37987f32"
-    "@docusaurus/plugin-content-blog" "2.0.0-alpha.f37987f32"
-    "@docusaurus/plugin-content-docs" "2.0.0-alpha.f37987f32"
-    "@docusaurus/plugin-content-pages" "2.0.0-alpha.f37987f32"
-    "@docusaurus/types" "2.0.0-alpha.f37987f32"
-
 "@docusaurus/theme-live-codeblock@2.0.0-alpha.69":
   version "2.0.0-alpha.69"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.69.tgz#e9c0cbee261ebbe32cbd06057941d4cdc64c6e60"
@@ -2366,22 +2281,6 @@
     "@docsearch/react" "^1.0.0-alpha.27"
     "@docusaurus/core" "2.0.0-alpha.69"
     "@docusaurus/utils" "2.0.0-alpha.69"
-    algoliasearch "^4.0.0"
-    algoliasearch-helper "^3.1.1"
-    clsx "^1.1.1"
-    eta "^1.11.0"
-    joi "^17.2.1"
-    lodash "^4.17.19"
-
-"@docusaurus/theme-search-algolia@2.0.0-alpha.f37987f32":
-  version "2.0.0-alpha.f37987f32"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.0.0-alpha.f37987f32.tgz#9042ae16fa8d97e5dad861e5ed150e28359ce8d1"
-  integrity sha512-ulBhxdbxcQptqQnu8iOrRXC8PsMuTm4qZUmJui0GyQ5aPbC/bXK2GuAtz1s5YE9PpeOL7W6IgX4FHm5luFUAIQ==
-  dependencies:
-    "@docsearch/react" "^3.0.0-alpha.31"
-    "@docusaurus/core" "2.0.0-alpha.f37987f32"
-    "@docusaurus/theme-common" "2.0.0-alpha.f37987f32"
-    "@docusaurus/utils" "2.0.0-alpha.f37987f32"
     algoliasearch "^4.0.0"
     algoliasearch-helper "^3.1.1"
     clsx "^1.1.1"
