@@ -9679,10 +9679,10 @@ rehype-parse@^6.0.2:
     parse5 "^5.0.0"
     xtend "^4.0.0"
 
-rehype-truncate@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/rehype-truncate/-/rehype-truncate-1.2.1.tgz#6614f4672f7067848b77b4a325c4446c7ab29666"
-  integrity sha512-MEAA9gVx6LOKCCRELxuYd1h/pLQIzPW2fzFpe3rfNuFoJ40nx0RRBDEN3zVkusRJN1l0F9/85FRZMnVEGF3R1A==
+rehype-truncate@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/rehype-truncate/-/rehype-truncate-1.2.2.tgz#fbb75bad4ad13d89d7dab2cf88c205fe48a4aa27"
+  integrity sha512-zj2FxxC3rm8bg6loesMdS/+BuGpp89mu+12VsJrBzN5kKgOxKwtawscQXElyt2BnxU2pG3hkoyb3Euc3Q7F38A==
 
 relateurl@^0.2.7:
   version "0.2.7"
