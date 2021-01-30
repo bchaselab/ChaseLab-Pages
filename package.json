@@ -15,7 +15,7 @@
     "@docusaurus/plugin-content-docs": "2.0.0-alpha.f48d435ce",
     "@docusaurus/plugin-ideal-image": "2.0.0-alpha.f48d435ce",
     "@docusaurus/preset-classic": "2.0.0-alpha.f48d435ce",
-    "@docusaurus/theme-live-codeblock": "2.0.0-alpha.70",
+    "@docusaurus/theme-live-codeblock": "2.0.0-alpha.f48d435ce",
     "@docusaurus/theme-search-algolia": "2.0.0-alpha.f48d435ce",
     "clsx": "1.1.1",
     "color": "3.1.3",
