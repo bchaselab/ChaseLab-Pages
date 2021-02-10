@@ -1610,27 +1610,6 @@
     remark-admonitions "^1.2.1"
     webpack "^4.44.1"
 
-"@docusaurus/plugin-content-blog@2.0.0-alpha.fd17476c3":
-  version "2.0.0-alpha.fd17476c3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-blog/-/plugin-content-blog-2.0.0-alpha.fd17476c3.tgz#6f218182991744f2b0bd711a3198f8c57978b056"
-  integrity sha512-cPZAh3BEkcQC3fxqoLYFaFJvR5lyUwsLpi3Mo6ABoH4Ec3swTht9HxJ0Kuwx7kCA5cOqCJW9V7mWDsW7ekOR6A==
-  dependencies:
-    "@docusaurus/core" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/mdx-loader" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/types" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/utils" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/utils-validation" "2.0.0-alpha.fd17476c3"
-    chalk "^3.0.0"
-    feed "^4.2.1"
-    fs-extra "^9.0.1"
-    globby "^10.0.1"
-    joi "^17.2.1"
-    loader-utils "^1.2.3"
-    lodash "^4.17.20"
-    reading-time "^1.2.0"
-    remark-admonitions "^1.2.1"
-    webpack "^4.44.1"
-
 "@docusaurus/plugin-content-docs@2.0.0-alpha.70":
   version "2.0.0-alpha.70"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-alpha.70.tgz#42dfa40786e819b42974dd167048b190b37bbee5"
@@ -1697,25 +1676,6 @@
     "@docusaurus/types" "2.0.0-alpha.70"
     "@docusaurus/utils" "2.0.0-alpha.70"
     "@docusaurus/utils-validation" "2.0.0-alpha.70"
-    globby "^10.0.1"
-    joi "^17.2.1"
-    loader-utils "^1.2.3"
-    lodash "^4.17.19"
-    minimatch "^3.0.4"
-    remark-admonitions "^1.2.1"
-    slash "^3.0.0"
-    webpack "^4.44.1"
-
-"@docusaurus/plugin-content-pages@2.0.0-alpha.fd17476c3":
-  version "2.0.0-alpha.fd17476c3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-pages/-/plugin-content-pages-2.0.0-alpha.fd17476c3.tgz#1e22f1cb81f492d306f3e193b757eef9d0b347de"
-  integrity sha512-PnRkmY6FMT2/rPjMUUCwe389w/HjK8saRpSRb/TEh82e+UiWPFHWFf8ZnCm353BIEZnPJ9m4jSKuYZlLN23mdw==
-  dependencies:
-    "@docusaurus/core" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/mdx-loader" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/types" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/utils" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/utils-validation" "2.0.0-alpha.fd17476c3"
     globby "^10.0.1"
     joi "^17.2.1"
     loader-utils "^1.2.3"
@@ -1829,17 +1789,6 @@
     "@docusaurus/plugin-content-pages" "2.0.0-alpha.70"
     "@docusaurus/types" "2.0.0-alpha.70"
 
-"@docusaurus/theme-common@2.0.0-alpha.fd17476c3":
-  version "2.0.0-alpha.fd17476c3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-common/-/theme-common-2.0.0-alpha.fd17476c3.tgz#6686698fce12b9acfb225292e998037facdb0831"
-  integrity sha512-+Cy3PgwkHenKQW0SRTh2KFGPVnjWo8yhfkY9LcDG/A6K6fpJapXf02M69d9ffULMRwlQdfa/BfpGEVnaWJXdtA==
-  dependencies:
-    "@docusaurus/core" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/plugin-content-blog" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/plugin-content-docs" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/plugin-content-pages" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/types" "2.0.0-alpha.fd17476c3"
-
 "@docusaurus/theme-live-codeblock@2.0.0-alpha.70":
   version "2.0.0-alpha.70"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.70.tgz#a27b5f61f7ba37a6f2a00929c7e0e0f95f9f3635"
@@ -1861,22 +1810,6 @@
     "@docusaurus/core" "2.0.0-alpha.70"
     "@docusaurus/theme-common" "2.0.0-alpha.70"
     "@docusaurus/utils" "2.0.0-alpha.70"
-    algoliasearch "^4.0.0"
-    algoliasearch-helper "^3.1.1"
-    clsx "^1.1.1"
-    eta "^1.11.0"
-    joi "^17.2.1"
-    lodash "^4.17.19"
-
-"@docusaurus/theme-search-algolia@2.0.0-alpha.fd17476c3":
-  version "2.0.0-alpha.fd17476c3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.0.0-alpha.fd17476c3.tgz#f11f14fce5231d96b2441b6244714f08336c24f5"
-  integrity sha512-rvbElmzY0oMR0TMrmpWb5g8gyld/1xk2jbyAk89vq/EODy7mi5PXW1CqUFnNNGLbf3O9/z9kFT0z8ZK+vKXPWA==
-  dependencies:
-    "@docsearch/react" "^3.0.0-alpha.31"
-    "@docusaurus/core" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/theme-common" "2.0.0-alpha.fd17476c3"
-    "@docusaurus/utils" "2.0.0-alpha.fd17476c3"
     algoliasearch "^4.0.0"
     algoliasearch-helper "^3.1.1"
     clsx "^1.1.1"
