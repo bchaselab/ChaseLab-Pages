@@ -1591,12 +1591,12 @@
     "@docusaurus/plugin-content-pages" "2.0.0-alpha.ffe8b6106"
     "@docusaurus/types" "2.0.0-alpha.ffe8b6106"
 
-"@docusaurus/theme-live-codeblock@2.0.0-alpha.ffe8b6106":
-  version "2.0.0-alpha.ffe8b6106"
-  resolved "https://registry.npmjs.org/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.ffe8b6106.tgz"
-  integrity sha512-2aazyNVfwyB4NeKQfUxVsuMXUCs9we8t/WBGjOvpPsd0Mazw3jrI2yRgxDcF/9rarZUD+qrQrrMNAU5iH8u8Bg==
+"@docusaurus/theme-live-codeblock@2.0.0-alpha.72":
+  version "2.0.0-alpha.72"
+  resolved "https://registry.yarnpkg.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-2.0.0-alpha.72.tgz#db2010e19af5a3e23cb242b39a67c10242cdf2ff"
+  integrity sha512-Rf7s+4EkkSzXTKUJ8lYS1+ChW0d6TzBzwh1gZmkozXT+n3i8cPcV47zThJIQfGfUUU5UUx/ulEEn7npgxz/K9w==
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.ffe8b6106"
+    "@docusaurus/core" "2.0.0-alpha.72"
     "@philpl/buble" "^0.19.7"
     clsx "^1.1.1"
     joi "^17.4.0"
