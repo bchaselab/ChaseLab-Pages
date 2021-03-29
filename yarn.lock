@@ -1348,15 +1348,15 @@
     url-loader "^4.1.1"
     webpack "^4.44.1"
 
-"@docusaurus/plugin-client-redirects@2.0.0-alpha.ffe8b6106":
-  version "2.0.0-alpha.ffe8b6106"
-  resolved "https://registry.npmjs.org/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-alpha.ffe8b6106.tgz"
-  integrity sha512-ZVVY/vo/Ui6I58ncao6Aig6l6nTAT+ygl1XOcf61SCgxKXhb9868rJzOppUs+YQ37fpLCw7jM76PIcvM6u3p8w==
+"@docusaurus/plugin-client-redirects@2.0.0-alpha.72":
+  version "2.0.0-alpha.72"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-alpha.72.tgz#86a3d10a25c857bde7fdb263813b53eb1ddb67c0"
+  integrity sha512-7fM4BUNFYdG4FZPivmuj3T3VpFPNlNM3oXJw5IqVHLhDD/IK1KyYKbjO1wnbPYWMqWoEomZEuZqo9RJhbSza3A==
   dependencies:
-    "@docusaurus/core" "2.0.0-alpha.ffe8b6106"
-    "@docusaurus/types" "2.0.0-alpha.ffe8b6106"
-    "@docusaurus/utils" "2.0.0-alpha.ffe8b6106"
-    "@docusaurus/utils-validation" "2.0.0-alpha.ffe8b6106"
+    "@docusaurus/core" "2.0.0-alpha.72"
+    "@docusaurus/types" "2.0.0-alpha.72"
+    "@docusaurus/utils" "2.0.0-alpha.72"
+    "@docusaurus/utils-validation" "2.0.0-alpha.72"
     chalk "^3.0.0"
     eta "^1.11.0"
     fs-extra "^9.1.0"
