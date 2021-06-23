@@ -24,7 +24,7 @@
     "node-fetch": "2.6.1",
     "node-forge": "0.10.0",
     "npm-to-yarn": "1.0.1",
-    "oembed-providers": "1.0.20170414",
+    "oembed-providers": "1.0.20210622",
     "parse-numeric-range": "1.2.0",
     "prism-react-renderer": "1.2.1",
     "prismjs": "1.23.0",
