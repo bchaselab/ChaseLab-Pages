@@ -35,8 +35,8 @@
     "rehype-truncate": "1.2.2",
     "remark-cli": "10.0.0",
     "remark-images": "3.0.0",
-    "remark-lint": "9.0.1",
-    "remark-preset-lint-recommended": "6.0.1",
+    "remark-lint": "9.1.0",
+    "remark-preset-lint-recommended": "6.1.0",
     "rome": "10.0.3-beta",
     "stylelint": "13.13.1",
     "stylelint-config-recommended": "5.0.0"
