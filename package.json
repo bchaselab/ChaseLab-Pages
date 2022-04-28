@@ -42,7 +42,7 @@
     "remark-lint": "9.1.1",
     "remark-preset-lint-recommended": "6.1.2",
     "rome": "10.0.4-beta",
-    "stylelint": "14.2.0",
+    "stylelint": "14.8.0",
     "stylelint-config-recommended": "6.0.0"
   },
   "browserslist": {
